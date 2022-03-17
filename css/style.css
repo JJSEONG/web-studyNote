@@ -12,9 +12,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.sub-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-align: center;
+}
 /* Header */
 header .logo {
-  height: 100px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,36 +39,32 @@ header nav ul {
 }
 header nav ul li a {
   position: relative;
-  padding: 10px;
+  padding: 20px;
 }
-header nav ul li a::before {
+header nav ul li:nth-child(2) a::before {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
   right: 0;
+  border-left: 1px solid #3e3e3e;
   border-right: 1px solid #3e3e3e;
   height: 9px;
   margin: auto 0;
 }
-header nav ul li:last-child a::before {
-  border-right: none;
-}
 header nav ul li a:hover {
   color: #d4beff;
 }
-/* Main-Section */
+/* About-me Section */
 main .container {
+  padding: 15px;
   text-align: center;
   background-color: #d4beff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-main .container h2 {
-  font-size: 2em;
-  margin: 10px 0;
 }
 main .cardwrap {
   position: relative;
@@ -137,4 +138,25 @@ main .cardwrap .textbox .sns li a {
 }
 main .cardwrap .textbox .sns li a i {
   color: #333;
+}
+/* 목표-section */
+main .container-white {
+  padding: 15px;
+}
+main .container-white .textbox {
+  margin: 10px auto;
+}
+main .container-white .textbox span {
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #865cd8;
+}
+main .container-white .purpose {
+  list-style: circle;
+}
+main .container-white .purpose li {
+  font-size: 14px;
+  margin-left: 30px;
+}
+main .container-white .etc {
+  margin: 10px auto;
 }
