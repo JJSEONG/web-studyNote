@@ -41,18 +41,6 @@ header nav ul li a {
   position: relative;
   padding: 20px;
 }
-header nav ul li:nth-child(2) a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-left: 1px solid #3e3e3e;
-  border-right: 1px solid #3e3e3e;
-  height: 9px;
-  margin: auto 0;
-}
 header nav ul li a:hover {
   color: #d4beff;
 }
@@ -61,10 +49,6 @@ main .container {
   padding: 15px;
   text-align: center;
   background-color: #d4beff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 main .cardwrap {
   position: relative;
@@ -73,7 +57,7 @@ main .cardwrap {
   background: linear-gradient(#865cd8, #865cd8 30%, #231440 30%, #231440);
   border-radius: 20px;
   overflow: hidden;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 main .picturebox {
   position: absolute;
@@ -85,7 +69,6 @@ main .picturebox {
   height: 100%;
   overflow: hidden;
   margin: 0 auto;
-  z-index: 1;
 }
 main .picturebox img {
   position: absolute;
@@ -110,6 +93,11 @@ main .cardwrap .textbox {
   justify-content: center;
   align-items: flex-end;
   color: #efefef;
+  opacity: 0;
+  transition: 0.5s;
+}
+main .cardwrap:hover .textbox {
+  opacity: 1;
 }
 main .cardwrap .textbox .details h3 {
   font-size: 20px;
@@ -162,25 +150,69 @@ main .container-white .etc {
 }
 /* 핵심언어 */
 .langinner .iconbox {
+  position:relative;
   width: 200px;
-  height: 300px;
+  height: 280px;
   background-color: #efefef;
   border-radius: 20px;
-  margin: 10px 0;
+  margin: 10px 20px;
+  display: inline-block;
+}
+.langinner .iconbox .iconwrap {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: calc(50% - 50px);
+  bottom: 0;
+  left: calc(50% - 50px);
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+.langinner .iconbox .iconwrap .textwrap {
+  position: absolute;
+  display: none;
+}
+.langinner .iconbox .iconwrap .textwrap p {
+  font-size: 14px;
+  width: 180px;
+}
+.langinner .iconbox .iconwrap .textwrap .button {
+  width: 160px;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+.langinner .iconbox .iconwrap .textwrap .button:hover {
+  background-color: #d6c9ef;
+}
+.langinner .iconbox:hover .iconwrap {
+  top: 20px;
+}
+.langinner .iconbox:hover .iconwrap .textwrap {
+  bottom: -130px;
+  display: block;
 }
 .langinner .iconbox p {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
+  transition: 0.5s;
+}
+.langinner .iconbox:hover p {
+  font-size: 18px;
 }
 .langinner .iconbox i {
-  font-size: 75px;
+  font-size: 120px;
+  transition: 0.5s;
+}
+.langinner .iconbox:hover i {
+  font-size: 80px;
 }
 .langinner .htmlbox i {
-  font-size: 90px;
   color: #ff5722;
 }
 .langinner .cssbox i {
