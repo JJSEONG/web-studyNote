@@ -42,7 +42,9 @@ header nav ul li a {
   padding: 20px;
 }
 header nav ul li a:hover {
-  color: #d4beff;
+  color: #865cd8;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px #865cd8;
 }
 /* About-me Section */
 main .container {
@@ -129,10 +131,18 @@ main .cardwrap .textbox .sns li a i {
 }
 /* 목표-section */
 main .container-white {
-  padding: 15px;
+  padding: 10px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 main .container-white .textbox {
   margin: 10px auto;
+}
+main .container-white .textbox p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0;
 }
 main .container-white .textbox span {
   font-weight: 700;
@@ -140,6 +150,13 @@ main .container-white .textbox span {
 }
 main .container-white .purpose {
   list-style: circle;
+  max-width: 245px;
+  margin: 20px auto;
+  background-color: #d6c9ef;
+  border-radius: 20px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  padding: 10px;
 }
 main .container-white .purpose li {
   font-size: 14px;
