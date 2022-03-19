@@ -160,3 +160,32 @@ main .container-white .purpose li {
 main .container-white .etc {
   margin: 10px auto;
 }
+/* 핵심언어 */
+.langinner .iconbox {
+  width: 200px;
+  height: 300px;
+  background-color: #efefef;
+  border-radius: 20px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.langinner .iconbox p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.langinner .iconbox i {
+  font-size: 75px;
+}
+.langinner .htmlbox i {
+  font-size: 90px;
+  color: #ff5722;
+}
+.langinner .cssbox i {
+  color: #30aadd;
+}
+.langinner .jsbox i {
+  color: #f2bf26;
+}
