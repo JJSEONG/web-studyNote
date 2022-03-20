@@ -19,7 +19,7 @@ a {
 }
 /* Header */
 header .logo {
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,12 @@ header .logo {
 }
 header .logo a {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo a img {
+  width: 90px;
 }
 header nav {
   text-align: center;
