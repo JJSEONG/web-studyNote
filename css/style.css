@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
 /* Common */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
 }
 ul {
   list-style: none;
@@ -26,7 +28,7 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #3e3e3e;
+  /* border-bottom: 1px solid #3e3e3e; */
 }
 header .logo a {
   text-align: center;
@@ -119,13 +121,13 @@ header nav ul li a:hover {
 main .container {
   padding: 15px;
   text-align: center;
-  background-color: #d4beff;
+  background-color: #ffdab9;
 }
 main .cardwrap {
   position: relative;
   width: 200px;
   height: 245px;
-  background: linear-gradient(#865cd8, #865cd8 30%, #231440 30%, #231440);
+  background: linear-gradient(#f5968c, #f5968c 30%, #f7786b 30%, #f7786b);
   border-radius: 20px;
   overflow: hidden;
   margin: 10px auto;
@@ -171,7 +173,7 @@ main .cardwrap:hover .textbox {
   opacity: 1;
 }
 main .cardwrap .textbox .details h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
 }
 main .cardwrap .textbox .details h3 span {
@@ -192,11 +194,11 @@ main .cardwrap .textbox .sns li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d6c9ef;
+  background-color: #ffdab9;
   border-radius: 50%;
 }
 main .cardwrap .textbox .sns li a i {
-  color: #333;
+  color: #000;
 }
 /* 목표-section */
 main .container-white {
@@ -215,7 +217,7 @@ main .container-white .textbox p {
 }
 main .container-white .textbox span {
   font-weight: 700;
-  text-shadow: 1px 1px 1px #865cd8;
+  text-shadow: 1px 1px 1px #f7786b;
 }
 main .container-white .purposewrap {
   margin: 0 auto;
@@ -224,7 +226,7 @@ main .container-white .purpose {
   list-style: circle;
   max-width: 280px;
   margin: 20px auto;
-  background-color: #d6c9ef;
+  background-color: #ffdab9;
   border-radius: 20px;
   border: 1px solid #333;
   box-sizing: border-box;
