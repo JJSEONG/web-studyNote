@@ -18,6 +18,7 @@ a {
   font-size: 1.5em;
   margin: 10px 0;
   text-align: center;
+  text-shadow: 1px 1px 2px #f7786b;
 }
 /* Header */
 header {
@@ -113,9 +114,9 @@ header nav ul li a {
   color: #333;
 }
 header nav ul li a:hover {
-  color: #865cd8;
+  color: #f7786b;
   font-weight: 600;
-  text-shadow: 1px 1px 5px #865cd8;
+  text-shadow: 1px 1px 5px #f7786b;
 }
 /* About-me Section */
 main .container {
@@ -217,7 +218,7 @@ main .container-white .textbox p {
 }
 main .container-white .textbox span {
   font-weight: 700;
-  text-shadow: 1px 1px 1px #f7786b;
+  text-shadow: 0px 0px 10px #f7786b;
 }
 main .container-white .purposewrap {
   margin: 0 auto;
@@ -263,45 +264,47 @@ main .container-white .etc {
   align-items: center;
   transition: 0.5s;
 }
-.langinner .iconbox .iconwrap .textwrap {
+.langinner .iconbox .textwrap {
   position: absolute;
-  display: none;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 0.5s;
 }
-.langinner .iconbox .iconwrap .textwrap p {
+.langinner .iconbox .textwrap p {
   font-size: 12px;
   width: 180px;
+  text-align: center;
+  margin: 0 auto;
 }
-.langinner .iconbox .iconwrap .textwrap .button {
+.langinner .iconbox .textwrap .button {
   width: 160px;
   height: 30px;
   margin-top: 20px;
   border-radius: 10px;
   border: 1px solid #333;
 }
-.langinner .iconbox .iconwrap .textwrap .button:hover {
-  background-color: #d6c9ef;
+.langinner .iconbox .textwrap .button:hover {
+  background-color: #ffdab9;
 }
 .langinner .iconbox:hover .iconwrap {
   top: 20px;
 }
-.langinner .iconbox:hover .iconwrap .textwrap {
-  bottom: -130px;
-  display: block;
+.langinner .iconbox:hover .textwrap {
+  opacity: 1;
 }
 .langinner .iconbox p {
   font-size: 30px;
   font-weight: 700;
-  transition: 0.5s;
-}
-.langinner .iconbox:hover p {
-  font-size: 18px;
 }
 .langinner .iconbox i {
   font-size: 120px;
   transition: 0.5s;
 }
-.langinner .iconbox:hover i {
-  font-size: 80px;
+.langinner .iconbox:hover .iconwrap .fa-brands {
+  font-size: 70px;
 }
 .langinner .htmlbox i {
   color: #ff5722;
