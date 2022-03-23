@@ -23,6 +23,9 @@ a {
 .mgt100 {
   margin-top: 100px;
 }
+.mgt150 {
+  margin-top: 150px;
+}
 /* Header */
 header {
   position: fixed;
@@ -255,7 +258,7 @@ main .container-white .etc {
   position:relative;
   width: 200px;
   height: 280px;
-  background-color: #efefef;
+  background-color: #fff;
   border-radius: 20px;
   margin: 10px 20px;
   display: inline-block;
