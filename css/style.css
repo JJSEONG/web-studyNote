@@ -20,8 +20,8 @@ a {
   text-align: center;
   text-shadow: 1px 1px 2px #f7786b;
 }
-.mgt100 {
-  margin-top: 100px;
+.mgt120 {
+  margin-top: 120px;
 }
 .mgt150 {
   margin-top: 150px;
@@ -36,6 +36,7 @@ header {
   width: 100%;
   height: 100px;
   background-color: #fff;
+  border-bottom: 1px solid #e3e3e3;
   z-index: 9;
 }
 header .logo {
@@ -133,7 +134,10 @@ header nav ul li a:hover {
 }
 /* About-me Section */
 main .container {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 15px;
+  border-radius: 20px;
   text-align: center;
   background-color: #ffdab9;
 }

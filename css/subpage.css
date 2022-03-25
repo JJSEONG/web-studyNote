@@ -1,9 +1,6 @@
 main .subpage-title {
-  max-width: 1000px;
   height: 320px;
-  background-color: #ffdab9;
-  border-radius: 20px;
-  margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
