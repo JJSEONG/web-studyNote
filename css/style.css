@@ -140,8 +140,7 @@ header nav ul li a:hover {
 main .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 15px;
-  border-radius: 20px;
+  padding: 10px;
   text-align: center;
   background-color: #ffdab9;
 }
@@ -331,4 +330,9 @@ main .container-white .etc {
 }
 .langinner .jsbox i {
   color: #f2bf26;
+}
+@media screen and (min-width: 1000px) {
+  main .container {
+    border-radius: 20px;
+  }
 }

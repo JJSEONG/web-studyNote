@@ -1,18 +1,21 @@
 main .list-title h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 22px;
   text-shadow: 1px 1px 5px #f7786b;
 }
 main .list-title h3 {
   margin: 20px 0;
-  font-size: 24px;
+  font-size: 18px;
+}
+main .list-title p {
+  font-size: 14px;
 }
 main .list-title p:nth-of-type(1) {
   margin: 15px 0;
   font-weight: 400;
 }
 main .list-title .source {
-  font-size: 12px;
+  font-size: 10px;
   color: #aaa;
   margin-bottom: 10px;
 }
@@ -23,17 +26,19 @@ main .list-title .html-str th,
 main .list-title .html-str td {
   border: 1px solid #333;
   padding: 10px 20px;
+  font-size: 14px;
 }
 main .list-title .html-str th {
   background-color: #ffdab9;
 }
 main .list-title pre {
-  height: 260px;
+  height: 220px;
   margin: auto 0;
 }
 main .list-title pre code .linewrap {
   background-color: #222;
   color: #5396cd;
+  font-size: 12px;
 }
 main .list-title pre code .linewrap .subtext {
   color: #e3e3e3;

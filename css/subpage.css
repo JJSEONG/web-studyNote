@@ -36,14 +36,12 @@ main .subpage-list .listcard {
   min-height: 200px;
   display: block;
   margin: 20px auto;
-  overflow: hidden;
   padding: 15px 10px;
   border: 1px solid #333;
   border-radius: 20px;
 }
-main .subpage-list .listcard .thumbnail  {
-  /* float: left; */
-  /* width: 30%; */
+main .subpage-list .listcard .listwrap {
+  overflow: hidden;
 }
 main .subpage-list .listcard .thumbnail img {
   width: 90px;
@@ -53,13 +51,10 @@ main .subpage-list .listcard .thumbnail img {
   transition: 0.5s;
 }
 main .subpage-list .listcard .listcontent {
-  /* float: left; */
-  /* width: 66%; */
   display: block;
   margin: 20px auto;
 }
 main .subpage-list .listcard .listcontent h3 {
-  /* font-size: 30px; */
   padding-bottom: 20px;
   margin-bottom: 10px;
   border-bottom: 1px solid #aaa;
@@ -70,9 +65,6 @@ main .subpage-list .listcard .listcontent p {
   font-size: 14px;
   text-align: center;
 }
-main .subpage-list .listcard:hover .thumbnail img {
-  width: 95px;
-}
 main .subpage-list .listcard:hover {
   border: 1px solid #f7786b;
   box-shadow: 1px 1px 10px #f7786b;
@@ -80,4 +72,23 @@ main .subpage-list .listcard:hover {
 main .subpage-list .listcard:hover .listcontent h3 {
   color: #ff5722;
   text-shadow: 1px 1px 2px #333;
+}
+@media screen and (min-width: 768px) {
+  main .subpage-list .listcard .thumbnail  {
+    float: left;
+    width: 30%;
+  }
+  main .subpage-list .listcard .listcontent {
+    float: left;
+    width: 66%;
+  }
+  main .subpage-list .listcard .thumbnail img {
+    margin-top: 15px;
+  }
+  main .subpage-list .listcard .listcontent h3 {
+    font-size: 24px;
+  }
+  main .subpage-list .listcard:hover .thumbnail img {
+    width: 95px;
+  }
 }
