@@ -311,6 +311,10 @@ main .container-white .etc {
 .langinner .iconbox:hover .textwrap {
   opacity: 1;
 }
+.langinner .iconimg {
+  width: 120px;
+  transition: 0.5s;
+}
 .langinner .iconbox p {
   font-size: 30px;
   font-weight: 700;
@@ -321,6 +325,9 @@ main .container-white .etc {
 }
 .langinner .iconbox:hover .iconwrap .fa-brands {
   font-size: 70px;
+}
+.langinner .iconbox:hover .iconimg {
+  width: 80px;
 }
 .langinner .htmlbox i {
   color: #ff5722;
