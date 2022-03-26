@@ -26,6 +26,10 @@ a {
 .mgt150 {
   margin-top: 150px;
 }
+.accent {
+  font-weight: 700;
+  text-shadow: 0px 0px 10px #f7786b;
+}
 /* Header */
 header {
   position: fixed;
@@ -232,10 +236,6 @@ main .container-white .textbox p {
   font-size: 22px;
   font-weight: 700;
   margin: 10px 0;
-}
-main .container-white .textbox span {
-  font-weight: 700;
-  text-shadow: 0px 0px 10px #f7786b;
 }
 main .container-white .purposewrap {
   margin: 0 auto;

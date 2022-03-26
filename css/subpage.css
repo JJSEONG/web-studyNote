@@ -37,13 +37,13 @@ main .subpage-list .listcard {
   display: block;
   margin: 20px auto;
   overflow: hidden;
-  padding: 30px;
+  padding: 15px 10px;
   border: 1px solid #333;
   border-radius: 20px;
 }
 main .subpage-list .listcard .thumbnail  {
-  float: left;
-  width: 30%;
+  /* float: left; */
+  /* width: 30%; */
 }
 main .subpage-list .listcard .thumbnail img {
   width: 90px;
@@ -53,20 +53,22 @@ main .subpage-list .listcard .thumbnail img {
   transition: 0.5s;
 }
 main .subpage-list .listcard .listcontent {
-  float: left;
-  width: 66%;
+  /* float: left; */
+  /* width: 66%; */
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 main .subpage-list .listcard .listcontent h3 {
-  font-size: 30px;
+  /* font-size: 30px; */
   padding-bottom: 20px;
   margin-bottom: 10px;
   border-bottom: 1px solid #aaa;
+  text-align: center;
   transition: 0.5s;
 }
 main .subpage-list .listcard .listcontent p {
-  font-size: 18px;
+  font-size: 14px;
+  text-align: center;
 }
 main .subpage-list .listcard:hover .thumbnail img {
   width: 95px;
