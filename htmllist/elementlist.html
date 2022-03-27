@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML의 요소(Element)의 종류</title>
+  <!-- style.css 연결 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subpage.css">
+  <link rel="stylesheet" href="./css/liststyle.css">
+  <link rel="icon" href="../favicon.png">
+  <!-- fontawesome icon 연결 link -->
+  <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
+  <!-- javascript 연결 -->
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="mainlogo">
+      </a>
+    </h1>
+    <div class="hambtn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navwrap">
+      <ul>
+        <li><a href="../html/index.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mgt120">
+    <section class="container-white list-title">
+      <h2>HTML의 요소(Element)의 종류</h2>
+      <h3>⭐️ 요소(Element)의 종류</h3>
+      <p>HTML의 요소(Element)는 수없이 많은 종류가 있습니다. 그 중에서도 HTML 문서에 주로 사용되며, 개인적으로 Web 개발을 할 때, 이정도는 최소한으로 알아야 한다고 생각하는 것 들을 정리하였습니다. 더욱 더 자세한 내용을 알고 싶으시면, MDN 문서 등 공식적인 문서를 찾아보는 것도 좋은 방법입니다.</p>
+    </section>
+    <section class="container-white list-title">
+      <h3>⭐️ !DOCTYPE 선언문</h3>
+      <p>태그(Tag)를 선언하기 전에, &lt;!DOCTYPE html&gt; 을 선언하여 이 웹페이지가 HTML로 구성이 된다는 점을 웹페이지에 알려주는 역할입니다. 이 선언이 없이 HTML의 문서를 작성하면, 웹브라우저에서 표준 모드(Standards Mode)가 아닌 비표준 모드(Quirks Mode) 로 인식해 크로스 브라우징에 오류가 발생 할 수 있어, 개발환경 외의 다른 브라우저에서는 아무리 깔끔하고 멋있게 작성한 문서라도 원하지 않는 모습으로 표현될 수도 있다.</p>
+      <h3>⭐️ &lt;html&gt; 태그</h3>
+      <p>
+        &lt;html&gt; 태그는 !DOCTYPE을 선언 한 후 html의 문서의 시작과 끝을 알려주는 태그이다.<br>
+        &lt;html&gt; 태그의 속성으로는 lang 이라는 속성이 들어가며, 이는 language의 약자로, 웹브라우저의 표준 언어를 지정하는데 사용된다.<br>
+        en = 영어 / ko = 한국어 / ja = 일본 등의 속성값이 존재한다.
+      </p>
+      <h3>⭐️ &lt;head&gt; 태그</h3>
+      <p>
+        &lt;head&gt; 태그는 &lt;html&gt; 태그 밑에 작성되며, 웹브라우저의 정보 이름이나 언어방식 등이 작성되어있다.<br>
+        대표적으로 &lt;meta&gt; 태그와 &lt;title&gt; 태그가 있다.<br><br>
+        <table class="table">
+          <tr>
+            <th>&lt;meta&gt;</th>
+            <td>태그는 웹브라우저의 언어, 정보, 키워드 등을 작성할 수 있다.</td>
+          </tr>
+          <tr>
+            <th>&lt;title&gt;</th>
+            <td>웹브라우저의 제목을 작성할 수 있다. </td>
+          </tr>
+        </table>         
+      </p>
+      <h3>⭐️ &lt;body&gt; 태그</h3>
+      <p>
+        &lt;body&gt; 태그는 html 문서의 내용을 작성하며, 여러가지 요소들을 구조와 문법에 맞게 작성하면, 웹페이지를 원하는 구조로 작성 할 수 있다.<br>
+        대표적으로 &lt;meta&gt; 태그와 &lt;title&gt; 태그가 있다.<br></p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;!DOCTYPE <span class="skyblue">html</span>&gt;<br>
+          &lt;html <span class="skyblue">lang</span>=<span class="orange">"ko"</span>&gt;<br>
+          &lt;head&gt;<br>
+          <div class="mgl20">
+            &lt;meta <span class="skyblue">charset</span>=<span class="orange">"UTF-8"</span>&gt;<br>
+            &lt;meta <span class="skyblue">http-equiv</span>=<span class="orange">"X-UA-Compatible"</span> <span class="skyblue">content</span>=<span class="orange">"IE=edge"</span>&gt;<br>
+            &lt;meta <span class="skyblue">name</span>=<span class="orange">"viewport"</span> <span class="skyblue">content</span>=<span class="orange">"width=device-width, initial-scale=1.0"</span>&gt;<br>
+            &lt;title&gt;<span class="white">Document</span>&lt;/title&gt;
+          </div>
+          &lt;/head&gt;<br>
+          &lt;body&gt;<br>
+          <span class="white">Contents</span><br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;<br>
+        </span> 
+      </div>
+      <p>위의 예시와 같이 DOCTYPE 선언 후 html태그가 나오고, head태그와 body태그가 차례로 나오는 구조를 가지게된다.</p>
+
+      <h3>⭐️ Heading 태그</h3>
+      <p>제목을 단계별로 나타내며, h1~h6으로 구성되어있다. 문서의 대제목부터 차례로 사용하며, 대제목은 h1 태그를 사용하되, h1 태그는 중복 사용은 피하는 것이 좋다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;h1&gt; 대제목 &lt;/h1&gt;<br>
+          &lt;h2&gt; 소제목 &lt;/h2&gt;<br>
+          &lt;h3&gt; 소소제목 &lt;/h3&gt;<br>
+          <span class="white">등 제목간의 중요도를 나타낼 때 사용한다.</span>
+        </span> 
+      </div>
+
+      <h3>⭐️ p(Paragraphs) 태그</h3>
+      <p>하나의 문장이나 문단을 설정할 때 사용하는 태그이다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;p <span class="white">안녕하세요?</span> &lt;/p&gt;<br>
+          &lt;p <span class="white">정종성입니다.</span> &lt;/p&gt;<br>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

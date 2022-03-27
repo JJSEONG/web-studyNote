@@ -20,6 +20,9 @@ a {
   text-align: center;
   text-shadow: 1px 1px 2px #f7786b;
 }
+.mgl20 {
+  margin-left: 20px;
+}
 .mgt120 {
   margin-top: 120px;
 }
@@ -136,6 +139,8 @@ header nav ul li a:hover {
   font-weight: 600;
   text-shadow: 1px 1px 5px #f7786b;
 }
+/* //Header */
+
 /* About-me Section */
 main .container {
   max-width: 1000px;
@@ -221,6 +226,8 @@ main .cardwrap .textbox .sns li a {
 main .cardwrap .textbox .sns li a i {
   color: #000;
 }
+/* //About-me Section */
+
 /* 목표-section */
 main .container-white {
   padding: 10px;
@@ -258,15 +265,9 @@ main .container-white .purpose li {
   font-size: 13px;
   margin-left: 30px;
 }
-main .container-white .etc {
-  margin: 10px auto;
-}
-main .container-white .etc p {
-  font-size: 14px;
-  text-align: center;
-  margin: 10px 0;
-}
-/* 핵심언어 */
+/* //목표-section */
+
+/* 핵심언어-section */
 .langinner .iconbox {
   position:relative;
   width: 200px;
@@ -348,6 +349,37 @@ main .container-white .etc p {
 .langinner .jsbox i {
   color: #f2bf26;
 }
+/* //핵심언어-section */
+
+/* Footer */
+footer .contact {
+  background-color: #ffdab9;
+  padding: 30px;
+  color: #333;
+}
+footer .contact .etc {
+  margin: 10px auto;
+}
+footer .contact .etc p {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+}
+footer .contact .sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .contact .sns li {
+  margin: 0 10px;
+}
+footer .contact .sns a {
+  padding: 20px;
+  font-size: 30px;
+  color: #000;
+}
+/* //Footer */
+
 @media screen and (min-width: 1000px) {
   main .container {
     border-radius: 20px;
