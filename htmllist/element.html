@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML의 구조와 개념</title>
+  <!-- style.css 연결 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subpage.css">
+  <link rel="stylesheet" href="./css/liststyle.css">
+  <link rel="icon" href="../favicon.png">
+  <!-- fontawesome icon 연결 link -->
+  <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
+  <!-- javascript 연결 -->
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="mainlogo">
+      </a>
+    </h1>
+    <div class="hambtn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navwrap">
+      <ul>
+        <li><a href="../html/index.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mgt120">
+    <section class="container-white list-title">
+      <h2>HTML의 구성요소</h2>
+      <h3>⭐️ 사전적 정의</h3>
+      <p>HTML 요소(HTML 엘리먼트, HTML element)는 HTML 문서나 웹 페이지를 이루는 개별적인 요소를 의미하며, 문서 객체 모델(DOM)으로 파싱된다. HTML은 트리나 HTML 노드(텍스트 노드 등)로 구성된다. 각 노드는 HTML 속성을 지정할 수 있다. 노드들은 기타 노드와 텍스트를 포함한 콘텐츠도 소유할 수 있다. 수많은 HTML 노드들은 시맨틱이나 의미를 표현한다. 이를테면 title 노드는 문서의 제목을 나타낸다.</p>
+      <p class="source">출처 : https://ko.wikipedia.org/wiki/HTML_%EC%9A%94%EC%86%8C</p>
+      <p>Web을 구성하기 위해 여러가지 종류의 요소(element)가 필요하다. 이 요소들의 각각의 역할을 알아보고 어느곳에서 사용되는지 알아보자.</p>
+    </section>
+    <section class="container-white list-title">
+      <h3>⭐️ 요소(Element)</h3>
+      <p>요소(Element)란 HTML문서의 시작과 끝 사이에 들어있는 여는태그와 닫는태그로 나타내어지는 모든 명령어를 칭한다. 요소의 종류는 셀 수 없을만큼 많으며, 주로 많이 사용되는 요소들을 기억해두고 사용한다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;html&gt;&lt;/html&gt; <span class="white">,</span> &lt;head&gt;&lt;/head&gt; <span class="white">,</span> &lt;body&gt;&lt;/body&gt; <span class="white">,</span> &lt;p&gt;&lt;/p&gt; <span class="white">,</span> &lt;ul&gt;&lt;ul&gt; <span class="white">등 여러 요소가있다.</span>
+        </span> 
+      </div>
+      <p><span class="accent">&lt;여는태그&gt;내용&lt;닫는태그&gt;</span>의 구조를 가진 모든 것을 요소(Element)라고 부른다.</p>
+
+      <h3>⭐️ 태그(Tag)</h3>
+      <p>태그(Tag)란 HTML문서의 요소 중 하나로, 여는태그와 닫는태그로 이루어져있다. 여는태그는 요소의 시작을 알리는 태그이며, 닫는태그는 요소의 종료를 알리는 태그이다. 일부 태그중에는 여는태그와 닫는태그를 같이 사용하는 빈 요소(Empty Element)가 존재한다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;p&gt; Contents &lt;/p&gt;</span>
+          &lt;p&gt; <span class="white">: 여는태그</span> Contents <span class="white">: 요소의 컨텐츠</span> &lt;/p&gt; <span class="white">: 닫는태그</span><br>
+          <span class="white">위의 예시와 같이 여는태그와 닫는태그가 한 요소(Element)로 지정된다.</span><br><br>
+          &lt;img /&gt; <span class="white">,</span> &lt;input /&gt; <span class="white">: 빈 요소(Empty Element)</span><br>
+          <span class="white">위의 예시와 같이 여는태그 후 [ / ] 가 붙어 닫는태그가 같이 쓰인 요소가 빈 요소(Empty Element)로 불린다.<br>빈 요소는 [ / ] 를 생략하여도 사용이 가능하다.</span> ex) &lt;img&gt; <span class="white">,</span> &lt;input&gt;
+        </span> 
+      </div>
+      <p>태그(Tag)는 <span class="accent">&lt;여는태그&gt;&lt;/닫는태그&gt;</span> 로 이루어져있으며, <span class="accent">&lt;태그 /&gt;</span>로 이루어진 빈 요소(Empty Element)도 존재한다.</p>
+
+      <h3>⭐️ 속성(Attribute) / 값(Argument)</h3>
+      <p>속성(Attribute)이란 요소 유형의 수정자(modifier)로 사용되며, 요소에 더욱 더 구체적인 명령을 지시할 수 있다. 속성(Attribute)에 값(Argument)을 지정하여 다양한 효과를 지정할 수 있으며, 이 속성(Attribute)는 여는태그 안에 추가로 같이 작성하여 사용한다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;태그 <span class="skyblue">속성</span> = <span class="orange">"값"</span>&gt; Contents &lt;/태그&gt;<br><br>
+          &lt;p <span class="skyblue">style</span> = <span class="orange">"color:orange;"</span>&gt; Contents &lt;/p&gt;<br>
+          <span class="white">
+            위의 내용에서 <span class="skyblue">style</span> 은 속성(Attribute [속성명])에 속하며, <span class="orange">"color:orange;"</span> 은 값(Argument [속성값])에 속한다.<br>
+            이 내용을 해석해보면, p 태그 안의 Contents의 글자색을 orange로 변경해주세요. 가 된다.
+          </span>
+      </div>
+      <p>속성(Attribute)는 값(Argument)와 같이 사용되며, <span class="accent">속성명과 속성값은 여는태그와 같이 사용해야한다.</span></p>
+    </section>
+  </main>
+</body>
+</html>

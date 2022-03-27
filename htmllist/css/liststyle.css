@@ -1,3 +1,18 @@
+/* Common */
+.white {
+  color: #fff;
+}
+.orange {
+  color: #f36d00;
+}
+.skyblue {
+  color: #acd2f0;
+}
+.line {
+  display: block;
+  max-width: 840px;
+}
+
 main .list-title h2 {
   text-align: center;
   font-size: 22px;
@@ -31,22 +46,21 @@ main .list-title .html-str td {
 main .list-title .html-str th {
   background-color: #ffdab9;
 }
-main .list-title pre {
-  height: 220px;
-  margin: auto 0;
-}
-main .list-title pre code .linewrap {
+main .list-title .linewrap {
+  max-height: 400px;
   background-color: #222;
   color: #5396cd;
-  font-size: 12px;
+  font-size: 14px;
+  padding: 20px 15px;
+  margin: 20px 0;
 }
-main .list-title pre code .linewrap .subtext {
+main .list-title .linewrap .subtext {
   color: #e3e3e3;
   margin-left: 20px;
 }
-main .list-title pre code .linewrap .secondline {
+main .list-title .linewrap .secondline {
   margin-left: 20px;
 }
-main .list-title pre code .linewrap .thirdline {
+main .list-title .linewrap .thirdline {
   margin-left: 40px;
 }
