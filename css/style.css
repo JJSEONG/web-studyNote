@@ -33,6 +33,10 @@ a {
   font-weight: 700;
   text-shadow: 0px 0px 10px #f7786b;
 }
+ol {
+  padding-left: 40px;
+  font-size: 14px;
+}
 .list-title .list {
   list-style: disc;
   padding-left: 40px;

@@ -1,3 +1,4 @@
+/* display-ex */
 .block-ex1 {
   background-color: red;
   color: #fff;
@@ -46,4 +47,14 @@
   color: #fff;
   margin: 20px;
   padding: 10px;
+}
+/* // display-ex */
+
+/* semantic-ex */
+.semantic {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.semantic img {
+  width: 100%;
 }
