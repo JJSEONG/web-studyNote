@@ -1,0 +1,49 @@
+.block-ex1 {
+  background-color: red;
+  color: #fff;
+}
+.block-ex2 {
+  background-color: red;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+}
+.inline-ex1 {
+  background-color: red;
+  color: #fff;
+}
+.inline-ex2 {
+  background-color: red;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+}
+.inline-ex3 {
+  background-color: red;
+  color: #fff;
+  margin: 20px;
+}
+.inline-ex4 {
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+}
+.inline-block-ex1 {
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+}
+.inline-block-ex2 {
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  width: 240px;
+  height: 50px;
+}
+.inline-block-ex3 {
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  margin: 20px;
+  padding: 10px;
+}

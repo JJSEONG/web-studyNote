@@ -33,6 +33,14 @@ a {
   font-weight: 700;
   text-shadow: 0px 0px 10px #f7786b;
 }
+.list-title .list {
+  list-style: disc;
+  padding-left: 40px;
+  font-size: 14px;
+}
+hr {
+  margin: 50px 0;
+}
 /* Header */
 header {
   position: fixed;

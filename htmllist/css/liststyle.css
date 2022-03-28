@@ -49,7 +49,7 @@ main .list-title .source {
   background-color: #ffdab9;
 }
 main .list-title .linewrap {
-  max-height: 400px;
+  max-height: 1000px;
   background-color: #222;
   color: #5396cd;
   font-size: 14px;

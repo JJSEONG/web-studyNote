@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML의 요소(Element)의 종류</title>
+  <!-- style.css 연결 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subpage.css">
+  <link rel="stylesheet" href="./css/liststyle.css">
+  <link rel="stylesheet" href="./css/example.css">
+  <link rel="icon" href="../favicon.png">
+  <!-- fontawesome icon 연결 link -->
+  <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
+  <!-- javascript 연결 -->
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="mainlogo">
+      </a>
+    </h1>
+    <div class="hambtn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navwrap">
+      <ul>
+        <li><a href="../html/index.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mgt120">
+    <section class="container-white list-title">
+      <!-- Main title -->
+      <h2>HTML의 display 속성</h2>
+      <h3>⭐️ display 속성</h3>
+      <p>HTML의 여러가지 display 속성 중 가장 기본으로 알아야하는 블록 레벨요소(Block Level Element)와 인라인 레벨요소(Inline Level Element)가 있다. 이 둘의 차이점을 확실히 알아두고, HTML 문서 작성 시 적재적소에 맞는 요소를 사용할 수 있도록 연습해야한다. 블록 레벨요소(Block Level Element)와 인라인 레벨요소(Inline Level Element)의 차이점을 알아보자.</p>
+      <!-- // Main title --><hr>
+
+      <!-- Block Level Element -->
+      <h3>⭐️ 블록 레벨요소(Block Level Element)</h3>
+      <p>
+        블록 레벨요소(Block Level Element)는 HTML의 요소들 중에 많은 비중을 차지하고있는 요소이다.<br>대표적인 예로는 &lt;body&gt;, &lt;h1&gt; ~ &lt;h6&gt;, &lt;header&gt;, &lt;main&gt; 등 시멘틱 태그(Semantic Tag)와 &lt;div&gt;, &lt;p&gt; 등 수많은 요소들이 포함되어있다.<br><br>
+      </p>
+
+      <h3>⭐️ 블록 레벨요소(Block Level Element) 의 특징</h3>
+      <ul class="list">
+        <li>블록 레벨요소는 부모 요소의 전체를 차지하여 블록처럼 만든다.</li>
+        <li>블록처럼 만들어지기 때문에, 작성한 순서대로 위에서 아래로 쌓인다.</li>
+        <li>새로운 블록 레벨요소가 나오면, 새로운 줄을 생성하여 만들어진다.</li>
+        <li>width, height와 margin, padding 값을 모두 가질 수 있다.</li>
+      </ul>
+      <div class="linewrap">
+        <span class="line">
+          <span class="orange">HTML</span><br>
+          &lt;p&gt;<span class="white">블록 레벨요소는 한 줄을 가득 채웁니다.</span>&lt;/p&gt;<br>
+          &lt;p&gt;<span class="white">블록 레벨요소는 아래로 쌓입니다.</span>&lt;/p&gt;<br><br>
+          <span class="white">위의 내용에 css를 통하여 배경색을 채워보겠습니다.</span><br><br>
+          CSS<br>
+          <span class="white">p</span> {
+            <div class="mgl20">
+              <span class="orange">background-color</span>: red;<br>
+            </div>
+          }
+        </span><br>
+        <p class="block-ex1">블록 레벨요소는 한 줄을 가득 채웁니다.</p>
+        <p class="block-ex1">블록 레벨요소는 아래로 쌓입니다.</p>
+      </div>
+      <p>위의 예시와 같이 블록 레벨요소는 부모 요소의 전체를 차지하며, 새로운 블록 레벨요소가 생성되면 아래로 쌓이는 것을 알 수 있다.</p>
+
+      <div class="linewrap">
+        <span class="line">
+          <span class="orange">HTML</span><br>
+          &lt;p&gt;<span class="white">크기를 지정할 수 있습니다.</span>&lt;/p&gt;<br>
+          &lt;p&gt;<span class="white">크기를 줄어도 아래로 쌓입니다.</span>&lt;/p&gt;<br>
+          <span class="white">위의 내용에 css를 통하여 배경색을 채우고 width값과 height값을 지정해보겠습니다.</span><br><br>
+          CSS<br>
+          <span class="white">p</span> {
+            <div class="mgl20">
+              <span class="orange">background-color</span>: red;<br>
+              <span class="orange">width</span>: 200px;<br>
+              <span class="orange">height</span>: 40px;
+            </div>
+          }
+        </span><br>
+        <p class="block-ex2">크기를 지정할 수 있습니다.</p>
+        <p class="block-ex2">크기를 줄어도 아래로 쌓입니다.</p>
+      </div>
+      <p>위의 예시와 같이 크기를 지정하면 지정한 크기를 가질 수 있으며, 크기가 줄어도 새로운 블록 레벨요소는 아래로 쌓인다.</p>
+      <!-- // Block Level Element --><hr>
+      
+      <!-- Inline Level Element -->
+      <h3>⭐️ 인라인 레벨요소(Inline Level Element)</h3>
+      <p>
+        인라인 레벨요소(Inline Level Element)는 블록 레벨요소와 상반된 속성을 가진 요소이다.<br>대표적인 예로는 &lt;span&gt;, &lt;img&gt;, &lt;a&gt;, &lt;em&gt;, &lt;i&gt; 등의 요소들이 포함되어있다.<br><br>
+      </p>
+      <h3>⭐️ 인라인 레벨요소(Inline Level Element) 의 특징</h3>
+      <ul class="list">
+        <li>인라인 레벨요소는 태그에 할당받은 크기만큼만 공간을 차지한다.</li>
+        <li>할당받은 크기만큼만 차지하기 때문에, 옆으로 나열된다.</li>
+        <li>태그가 없이 작성된 글자와 같은 취급이 된다.</li>
+        <li>width, height 값을 지정할 수 없다.</li>
+        <li>padding 은 상하좌우 값을 모두 가질 수 있다.</li>
+        <li>margin 은 left,right(좌우)값만 가질 수 있다.</li>
+      </ul>
+      <div class="linewrap">
+        <span class="line">
+          <span class="orange">HTML</span><br>
+          &lt;span&gt;<span class="white">인라인 레벨요소는 컨텐츠만큼 공간을 가집니다.</span>&lt;/span&gt;<br>
+          &lt;span&gt;<span class="white">인라인 레벨요소는 옆으로 배치됩니다.</span>&lt;/span&gt;<br><br>
+          <span class="white">위의 내용에 css를 통하여 배경색을 채워보겠습니다.</span><br><br>
+          CSS<br>
+          <span class="white">span</span> {
+            <div class="mgl20">
+              <span class="orange">background-color</span>: red;<br>
+            </div>
+          }
+        </span><br>
+        <span class="inline-ex1">인라인 레벨요소는 컨텐츠만큼 공간을 가집니다.</span>
+        <span class="inline-ex1">인라인 레벨요소는 옆으로 배치됩니다.</span>
+      </div>
+      <p>위의 예시와 같이 인라인 레벨요소는 할당된 컨텐츠만큼 공간을 가지고, 옆으로 배치된다.</p>
+
+      <div class="linewrap">
+        <span class="line">
+          <span class="orange">HTML</span><br>
+          &lt;span&gt;<span class="white">할당된 컨텐츠 이상 공간을 가질 수 없습니다.</span>&lt;/span&gt;<br>
+          <span class="white">위의 내용에 css를 통하여 배경색을 채우고 width값과 height값을 지정해보겠습니다.</span><br><br>
+          CSS<br>
+          <span class="white">span</span> {
+            <div class="mgl20">
+              <span class="orange">background-color</span>: red;<br>
+              <span class="orange">width</span>: 200px;<br>
+              <span class="orange">height</span>: 40px;<br>
+            </div>
+          }<br><br>
+          <span class="inline-ex2">할당된 컨텐츠 이상 공간을 가질 수 없습니다.</span><br><br>
+        </span>
+      </div>
+      <p>위의 예시와 같이 인라인 레벨요소는 width값과 height값은 가질 수 없다.</p>
+
+      <div class="linewrap">
+        <span class="line">
+          <span class="orange">HTML</span><br>
+          &lt;span&gt;<span class="white">margin은 좌우값만 적용됩니다.</span>&lt;/span&gt;<br>
+          CSS<br>
+          <span class="white">span</span> {
+            <div class="mgl20">
+              <span class="orange">background-color</span>: red;<br>
+              <span class="orange">margin</span>: 20px;
+            </div>
+          }<br><br>
+          <span class="inline-ex3">margin은 좌우값 적용됩니다.</span><br><br>
+          <span class="orange">HTML</span><br>
+          &lt;span&gt;<span class="white">padding은 모든값이 적용됩니다.</span>&lt;/span&gt;<br>
+          CSS<br>
+          <span class="white">span</span> {
+            <div class="mgl20">
+              <span class="orange">background-color</span>: red;<br>
+              <span class="orange">padding</span>: 10px;
+            </div>
+          }<br><br>
+          <span class="inline-ex4">padding은 모든값이 적용됩니다.</span>
+        </span><br>
+      </div>
+      
+      <p>위의 예시와 같이 인라인 레벨요소는 margin값은 left,right(좌우)의 값, padding값은 상하좌우 모든 값을 가질 수 있다.</p>
+      <!-- Inline Level Element --><hr>
+
+      <!-- Inline-Block Level Element -->
+      <h3>⭐️ 인라인-블록 레벨요소(Inline-block Level Element)</h3>
+      <p>
+        인라인-블록 레벨요소(Inline-block Level Element)는 블록 레벨요소(Block Level Element)와 인라인 레벨요소(Inline Level Element)를 합쳐서 사용한다고 생각하면 좋다.<br>
+        대표적인 예로는 &lt;input&gt;, &lt;button&gt;, &lt;select&gt;, &lt;textarea&gt; 등의 요소들이 포함되어있다.
+      </p>
+      <h3>⭐️ 인라인-블록 레벨요소(Inline-block Level Element) 의 특징</h3>
+      <ul class="list">
+        <li>블록 레벨요소에 inline-block 속성을 부여하면, 인라인 레벨요소와 같이 줄바꿈이 일어나지 않으며, 다른 요소들과 한 줄에 같이 작성이 된다.</li>
+        <li>인라인 레벨요소에 inline-block 속성을 부여하면, 인라인 레벨요소에서 지정할 수 없었던 width, height 값을 지정할 수 있으며, margin, padding 모든 값을 지정할 수 있다.</li>
+      </ul>
+      <div class="linewrap">
+        <span class="line">
+          <span class="orange">HTML</span><br>
+          &lt;p&gt;<span class="white">블록요소를 인라인-블록요소 설정1</span>&lt;/p&gt;<br>
+          &lt;p&gt;<span class="white">블록요소를 인라인-블록요소 설정2</span>&lt;/p&gt;<br><br>
+          <span class="white">위의 내용에 css를 통하여 inline-block으로 변경해보겠습니다.</span><br><br>
+          CSS<br>
+          <span class="white">p</span> {
+            <div class="mgl20">
+              <span class="orange">display</span>: inline-block;<br>
+              <span class="orange">background-color</span>: red;
+            </div>
+          }
+        </span><br>
+        <p class="inline-block-ex1">블록요소를 인라인-블록요소 설정1</p>
+        <p class="inline-block-ex1">블록요소를 인라인-블록요소 설정2</p>
+      </div>
+      <p>위의 내용과 같이 블록 레벨요소를 인라인-블록 요소로 변경하면, 더이상 줄바꿈이 일어나지 않고 옆으로 배치됩니다.</p><br>
+
+      <div class="linewrap">
+        <span class="line">
+          <span class="orange">HTML</span><br>
+          &lt;span&gt;<span class="white">인라인요소를 인라인-블록요소 설정1</span>&lt;/span&gt;<br>
+          <span class="white">위의 내용에 css를 통하여 inline-block으로 변경 후 크기를 지정해보겠습니다.</span><br><br>
+          CSS<br>
+          <span class="white">span</span> {
+            <div class="mgl20">
+              <span class="orange">display</span>: inline-block;<br>
+              <span class="orange">background-color</span>: red;<br>
+              <span class="orange">width</span>: 240px;<br>
+              <span class="orange">height</span>: 50px;
+            </div>
+          }
+        </span><br>
+        <span class="inline-block-ex2">인라인요소를 인라인-블록요소 설정1</span>
+      </div>
+      <p>위의 내용과 같이 인라인 레벨요소를 인라인-블록 요소로 변경하면, width와 height값으로 크기를 지정할 수 있습니다.</p><br>
+
+      <div class="linewrap">
+        <span class="line">
+          <span class="orange">HTML</span><br>
+          &lt;span&gt;<span class="white">인라인요소를 인라인-블록요소 설정2</span>&lt;/span&gt;<br>
+          <span class="white">위의 내용에 css를 통하여 inline-block으로 변경 후 margin,padding값을 지정해보겠습니다.</span><br><br>
+          CSS<br>
+          <span class="white">span</span> {
+            <div class="mgl20">
+              <span class="orange">display</span>: inline-block;<br>
+              <span class="orange">background-color</span>: red;<br>
+              <span class="orange">margin</span>: 20px;<br>
+              <span class="orange">padding</span>: 10px;
+            </div>
+          }
+        </span><br>
+        <span class="inline-block-ex3">인라인요소를 인라인-블록요소 설정2</span>
+      </div>
+      <p>위의 내용과 같이 인라인 레벨요소를 인라인-블록 요소로 변경하면, padding값은 그대로 모든값을 적용할 수 있으며, 좌우만 적용되던 margin값은 상하좌우 모두 적용되는 것을 알 수 있습니다.</p>
+      <!-- // Inline-Block Level Element -->
+    </section>
+  </main>
+</body>
+</html>
