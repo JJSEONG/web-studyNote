@@ -58,3 +58,22 @@
 .semantic img {
   width: 100%;
 }
+/* // semantic-ex */
+
+/* element 표시 css */
+.element {
+  font-size: 12px;
+  color: #cb0a0a;
+  display: inline-block;
+  padding: 4px;
+  border: 1px solid #ffdab9;
+  border-bottom-width: 3px;
+  box-shadow: 1px 1px 10px #f7786b;
+  border-radius: 10px;
+}
+/* element 표시 css */
+/* hr example */
+.hrex {
+  margin: 0;
+}
+/* //hr example */

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/subpage.css">
   <link rel="stylesheet" href="./css/liststyle.css">
+  <link rel="stylesheet" href="./css/example.css">
   <link rel="icon" href="../favicon.png">
   <!-- fontawesome icon 연결 link -->
   <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
@@ -41,7 +42,7 @@
       <!-- Main title -->
       <h2>HTML의 요소(Element)의 종류</h2>
       <h3>⭐️ 요소(Element)의 종류</h3>
-      <p>HTML의 요소(Element)는 수없이 많은 종류가 있습니다. 그 중에서도 HTML 문서에 주로 사용되며, 개인적으로 Web 개발을 할 때, 이정도는 최소한으로 알아야 한다고 생각하는 것 들을 정리하였습니다. 더욱 더 자세한 내용을 알고 싶으시면, MDN 문서 등 공식적인 문서를 찾아보는 것도 좋은 방법입니다.</p>
+      <p>HTML의 요소(Element)는 수없이 많은 종류가 있습니다. 그 중에서도 HTML 문서에 주로 사용되며, 개인적으로 Web 개발을 할 때, 이정도는 최소한으로 알아야 한다고 생각하는 것 들을 정리하였기 때문에 부족할 수 있습니다. 더욱 더 자세한 내용을 알고 싶으시면, MDN 문서 등 공식적인 문서를 찾아보는 것도 좋은 방법입니다.</p>
       <!-- // Main title -->
 
       <!-- DOCTYPE Section -->
@@ -76,8 +77,20 @@
       </p>
       <!-- // head Section -->
 
+      <!-- link tag -->
+      <h3>⭐️ &lt;link&gt; 태그</h3>
+      <p>빈 요소(Empty Element)이며, head 태그 안에 사용된다. 외부에서 문서를 가져올 때 사용하는 태그이다. 주로, css, javascript 같은 문서를 불러오는데 사용한다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;link <span class="skyblue">rel</span> = <span class="orange">현재 문서와의 관계</span> <span class="skyblue">href</span> = <span class="orange">외부 문서의 링크(경로)</span>&gt;<br><br>
+          <span class="skyblue">rel 속성</span><br><span class="white">: 불러 올 외부 문서와 현재 작성되고 있는 문서와의 관계를 나타낸다. 주로 사용되는 stylesheet 는 css 문서를 불러올 때 사용되는 속성값이고, icon은 favicon을 불러올 때 사용되는 속성값이다.</span><br>
+          <span class="skyblue">href 속성</span><br><span class="white">: 불러 올 외부 문서의 링크(경로)를 작성하여 현재 작성되는 페이지에서 작성된 속성값의 경로에서 문서를 가져오는 역할을 한다.</span>
+        </span>
+      </div>
+      <!-- // link tag -->
+
       <!-- body Section -->
-      <h3>⭐️ &lt;body&gt; 태그</h3>
+      <h3>⭐️ &lt;body&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
       <p>
         &lt;body&gt; 태그는 html 문서의 내용을 작성하며, 여러가지 요소들을 구조와 문법에 맞게 작성하면, 웹페이지를 원하는 구조로 작성 할 수 있다.<br>
       </p>
@@ -106,7 +119,7 @@
       <!-- // Example -->
 
       <!-- heading tag -->
-      <h3>⭐️ Heading 태그</h3>
+      <h3>⭐️ Heading 태그 <span class="element mgl20">Block Level Element</span></h3>
       <p>제목을 단계별로 나타내며, h1~h6으로 구성되어있다. 문서의 대제목부터 차례로 사용하며, 대제목은 h1 태그를 사용하되, h1 태그는 중복 사용은 피하는 것이 좋다.</p>
       <div class="linewrap">
         <span class="line">
@@ -119,15 +132,111 @@
       <!-- // heading tag -->
 
       <!-- paragraphs tag -->
-      <h3>⭐️ p(Paragraphs) 태그</h3>
+      <h3>⭐️ &lt;p&gt; (Paragraphs) 태그 <span class="element mgl20">Block Level Element</span></h3>
       <p>하나의 문장이나 문단을 설정할 때 사용하는 태그이다.</p>
       <div class="linewrap">
         <span class="line">
-          &lt;p <span class="white">안녕하세요?</span> &lt;/p&gt;<br>
-          &lt;p <span class="white">정종성입니다.</span> &lt;/p&gt;<br>
+          &lt;p&gt; <span class="white">안녕하세요?</span> &lt;/p&gt;<br>
+          &lt;p&gt; <span class="white">정종성입니다.</span> &lt;/p&gt;<br>
+        </span>
       </div>
       <!-- // paragraphs tag -->
 
+      <!-- hr tag -->
+      <h3>⭐️ &lt;hr /&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
+      <p>빈 요소(Empty Element)로 단독으로 사용되며, 주제가 변경되거나 구분을 주고 싶을 때 사용되며, 사용시 아래 예시와 같이 구분선이 생성된다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;span&gt; <span class="white">첫번째주제</span> &lt;/span&gt; &lt;hr /&gt;<hr class="hrex">
+          &lt;span&gt; <span class="white">두번째주제</span> &lt;/span&gt;<br>
+        </span>
+      </div>
+      <!-- // hr tag -->
+
+      <!-- blockquote tag -->
+      <h3>⭐️ &lt;blockquote&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
+      <p>
+        일반적으로 어떠한 문구를 인용하여 가져올 때 사용된다. 즉, 인용문을 가져올 때 사용하는 태그이다.<br>
+        속성으로는 cite 속성이 있으며, cite 속성값으로는 인용된 정보의 출처(URL)을 입력한다.
+      </p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;blockquote <span class="skyblue">cite</span> = <span class="orange">"인용문의 출처(URL)"</span>&gt; <span class="white">인용문</span> &lt;/blockquote&gt;
+        </span>
+      </div>
+      <!-- // blockquote tag -->
+
+      <!-- pre tag -->
+      <h3>⭐️ &lt;pre&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
+      <p>서식이 미리 지정된 텍스트를 보여주는 태그이다. html 문서 내의 줄바꿈이나 공백을 특정한 태그와 함께 사용하여 표현해야 하는데, pre 태그 안에서는 작성한 내용대로 화면에 표시한다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;pre&gt;<br>
+          <span class="white">
+            pre 태그 안에서 &lt;br&gt;태그가 없이<br>
+            줄바꿈을 진행해도<br>
+            줄바꿈이 표현이 된다.
+          </span><br>
+          &lt;/pre&gt;
+        </span>
+      </div>
+      <!-- // pre tag -->
+
+      <!-- br tag -->
+      <h3>⭐️ &lt;br /&gt; 태그 <span class="element mgl20">Inline Level Element</span></h3>
+      <p>빈 요소(Empty Element)로 단독으로 사용되며, 줄바꿈을 하고 싶을 때 사용한다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;span&gt; <span class="white">안녕하세요?</span> &lt;/span&gt; &lt;br /&gt;<br>
+          &lt;span&gt; <span class="white">정종성입니다.</span> &lt;/span&gt;<br>
+        </span>
+      </div>
+      <!-- // br tag -->
+
+      <!-- ol, ul tag -->
+      <h3>⭐️ &lt;ol&gt;,&lt;ul&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
+      <p>
+        이 두개의 태그는 목록을 나타낼 때 사용한다. 순차적 목록(Ordered list)인 &lt;ol&gt;, 비순차적 목록(Unordered list)인 &lt;ul&gt; 이 있다.<br>
+        이 두개의 태그 안에는 &lt;li&gt; 태그만이 자식으로 들어갈 수 있다.
+      </p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;ol&gt;
+          <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
+          &lt;/ol&gt;
+          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+          <ol class="white">
+            <li>첫번째</li>
+            <li>두번째</li>
+            <li>세번째</li>
+          </ol>
+        </span>
+      </div>
+      <p>&lt;ol&gt; 태그는 순차적인 목록을 작성할 때 사용한다.</p>
+
+      <div class="linewrap">
+        <span class="line">
+          &lt;ol <span class="skyblue">type</span>= <span class="orange">"a"</span> <span class="skyblue">start</span> = <span class="orange">"4"</span> <span class="skyblue">reversed</span>&gt;
+          <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
+          &lt;/ol&gt;
+          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+          <ol class="white" type="a" start="4" reversed>
+            <li>첫번째</li>
+            <li>두번째</li>
+            <li>세번째</li>
+          </ol>
+        </span>
+      </div>
+      <p>
+        &lt;ol&gt; 태그의 속성인 type 속성에 속성값으로 " 1(기본값), a, A, i, I "가 있으며, 항목에 사용할 번호의 종류 설정한다.<br>
+        &lt;ol&gt; 태그의 속성인 start 속성에 숫자를 입력하면 항목의 시작 숫자 설정한다.<br>
+        &lt;ol&gt; 태그의 속성인 reversed는 말 그대로, 순서를 역순으로 설정해서 보여준다.<br>
+      </p>
+      <!-- // ol, ul tag -->
     </section>
   </main>
 </body>
