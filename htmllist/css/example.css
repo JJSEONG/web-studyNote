@@ -77,3 +77,29 @@
   margin: 0;
 }
 /* //hr example */
+
+/* ul,ol example */
+.ollist-ex {
+  padding-left: 40px;
+  font-size: 14px;
+}
+.ullist-ex {
+  padding-left: 40px;
+  font-size: 14px;
+  list-style: disc;
+}
+.ullist-ex2 {
+  padding-left: 40px;
+  font-size: 14px;
+  list-style: square;
+}
+/* // ul,ol example */
+
+/* dl,dt,dd example */
+dl {
+  margin: 14px 0;
+}
+dd {
+  margin-left: 40px;
+}
+/* // dl,dt,dd example */

@@ -199,6 +199,7 @@
         이 두개의 태그는 목록을 나타낼 때 사용한다. 순차적 목록(Ordered list)인 &lt;ol&gt;, 비순차적 목록(Unordered list)인 &lt;ul&gt; 이 있다.<br>
         이 두개의 태그 안에는 &lt;li&gt; 태그만이 자식으로 들어갈 수 있다.
       </p>
+      <!-- ol tag example -->
       <div class="linewrap">
         <span class="line">
           &lt;ol&gt;
@@ -207,7 +208,7 @@
           <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
           &lt;/ol&gt;
           <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
-          <ol class="white">
+          <ol class="white ollist-ex">
             <li>첫번째</li>
             <li>두번째</li>
             <li>세번째</li>
@@ -224,7 +225,7 @@
           <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
           &lt;/ol&gt;
           <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
-          <ol class="white" type="a" start="4" reversed>
+          <ol class="white ollist-ex" type="a" start="4" reversed>
             <li>첫번째</li>
             <li>두번째</li>
             <li>세번째</li>
@@ -236,7 +237,85 @@
         &lt;ol&gt; 태그의 속성인 start 속성에 숫자를 입력하면 항목의 시작 숫자 설정한다.<br>
         &lt;ol&gt; 태그의 속성인 reversed는 말 그대로, 순서를 역순으로 설정해서 보여준다.<br>
       </p>
+      <!-- // ol tag example -->
+
+      <!-- ul tag example -->
+      <div class="linewrap">
+        <span class="line">
+          &lt;ul&gt;
+          <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
+          &lt;/ul&gt;
+          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+          <ul class="white ullist-ex">
+            <li>첫번째</li>
+            <li>두번째</li>
+            <li>세번째</li>
+          </ul>
+        </span>
+      </div>
+      <p>&lt;ul&gt; 태그는 비순차적인 목록을 작성할 때 사용한다.</p>
+
+      <div class="linewrap">
+        <span class="line">
+          &lt;ul <span class="skyblue">type</span>= <span class="orange">"square"</span>&gt;
+          <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
+          &lt;/ul&gt;
+          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+          <ul type="square" class="white ullist-ex2">
+            <li>첫번째</li>
+            <li>두번째</li>
+            <li>세번째</li>
+          </ul>
+        </span>
+      </div>
+      <p>&lt;ul&gt; 태그의 속성인 type 속성에 속성값으로 " disc(기본값), square, circle, none " 이 있으며, 항목에 사용할 기호의 종류 설정한다.</p>
+      <!-- // ul tag example -->
       <!-- // ol, ul tag -->
+
+      <!-- li tag -->
+      <h3>⭐️ &lt;li&gt; 태그 <span class="element mgl20">list-item Element</span></h3>
+      <p>
+        이 태그는 목록의 리스트를 나타낼 때 사용한다. &lt;li&gt; 태그는 단독으로 사용이 불가능하며, 꼭 &lt;ul&gt; 혹은 &lt;ul&gt; 태그를 부모로 두어야 사용이 가능하다.<br>
+        위의 &lt;ol&gt;, &lt;ul&gt; 의 예시만 보아도 사용법을 알 수 있다.
+      </p>
+      <!-- // li tag -->
+
+      <!-- dl,dt,dd tag -->
+      <h3>⭐️ &lt;dl&gt;,&lt;dt&gt;,&lt;dd&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
+      <p>
+        위의 태그들은 용어에 대한 설명을 지정하여 사용하는 태그이다. &lt;dl&gt; 태그 안에는 &lt;dt&gt;, &lt;dd&gt; 외의 태그는 자식으로 존재가 불가능하다.<br>
+        <ul class="ullist-ex">
+          <li>
+            <p>&lt;dl&gt; : 해당 범위가 용어와 용어에 대한 설명임을 정의한다.</p>
+          </li>
+          <li>
+            <p>&lt;dt&gt; : 용어를 지칭한다.</p>
+          </li>
+          <li>
+            <p>&lt;dd&gt; : 용어에 대한 설명을 일컫는다.</p>
+          </li>
+        </ul>
+      </p>
+      <!-- ol tag example -->
+      <div class="linewrap">
+        <span class="line">
+          &lt;dl&gt;
+          <div class="secondline">&lt;dt&gt; <span class="white">Firefox</span> &lt;/dt&gt;</div>
+          <div class="secondline">&lt;dd&gt; <span class="white">모질라 재단에서 만든 웹 브라우저</span> &lt;/dd&gt;</div>
+          &lt;/dl&gt;
+          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+          <dl class="white">
+            <dt>Firefox</dt>
+            <dd>모질라 재단에서 만든 웹 브라우저</dd>
+          </dl>
+        </span>
+      </div>
+      <p>용어의 대한 설명을 지정하여 작성하여준다. 하나의 용어에 여러개의 설명이 있다면, &lt;dd&gt; 태그를 추가하여 작성해주면 된다.</p>
+      <!-- // dl,dt,dd tag -->
     </section>
   </main>
 </body>
