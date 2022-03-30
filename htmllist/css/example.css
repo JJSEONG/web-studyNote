@@ -103,3 +103,9 @@ dd {
   margin-left: 40px;
 }
 /* // dl,dt,dd example */
+
+/* bold-example */
+.bold-ex p{
+  font-weight: 300;
+}
+/* bold-example */

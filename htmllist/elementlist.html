@@ -40,282 +40,592 @@
   <main class="mgt120">
     <section class="container-white list-title">
       <!-- Main title -->
-      <h2>HTML의 요소(Element)의 종류</h2>
-      <h3>⭐️ 요소(Element)의 종류</h3>
-      <p>HTML의 요소(Element)는 수없이 많은 종류가 있습니다. 그 중에서도 HTML 문서에 주로 사용되며, 개인적으로 Web 개발을 할 때, 이정도는 최소한으로 알아야 한다고 생각하는 것 들을 정리하였기 때문에 부족할 수 있습니다. 더욱 더 자세한 내용을 알고 싶으시면, MDN 문서 등 공식적인 문서를 찾아보는 것도 좋은 방법입니다.</p>
+      <article>
+        <h2>HTML의 요소(Element)의 종류</h2>
+        <h3>⭐️ 요소(Element)의 종류</h3>
+        <p>HTML의 요소(Element)는 수없이 많은 종류가 있습니다. 그 중에서도 HTML 문서에 주로 사용되며, 개인적으로 Web 개발을 할 때, 이정도는 최소한으로 알아야 한다고 생각하는 것 들을 정리하였기 때문에 부족할 수 있습니다. 더욱 더 자세한 내용을 알고 싶으시면, MDN 문서 등 공식적인 문서를 찾아보는 것도 좋은 방법입니다.</p>
+      </article>
       <!-- // Main title -->
 
       <!-- DOCTYPE Section -->
-      <h3>⭐️ !DOCTYPE 선언문</h3>
-      <p>태그(Tag)를 선언하기 전에, &lt;!DOCTYPE html&gt; 을 선언하여 이 웹페이지가 HTML로 구성이 된다는 점을 웹페이지에 알려주는 역할입니다. 이 선언이 없이 HTML의 문서를 작성하면, 웹브라우저에서 표준 모드(Standards Mode)가 아닌 비표준 모드(Quirks Mode) 로 인식해 크로스 브라우징에 오류가 발생 할 수 있어, 개발환경 외의 다른 브라우저에서는 아무리 깔끔하고 멋있게 작성한 문서라도 원하지 않는 모습으로 표현될 수도 있다.</p>
+      <article>
+        <h3>⭐️ !DOCTYPE 선언문</h3>
+        <p>태그(Tag)를 선언하기 전에, &lt;!DOCTYPE html&gt; 을 선언하여 이 웹페이지가 HTML로 구성이 된다는 점을 웹페이지에 알려주는 역할입니다. 이 선언이 없이 HTML의 문서를 작성하면, 웹브라우저에서 표준 모드(Standards Mode)가 아닌 비표준 모드(Quirks Mode) 로 인식해 크로스 브라우징에 오류가 발생 할 수 있어, 개발환경 외의 다른 브라우저에서는 아무리 깔끔하고 멋있게 작성한 문서라도 원하지 않는 모습으로 표현될 수도 있다.</p>
+      </article>
       <!-- // DOCTYPE Section -->
 
       <!-- html Section -->
-      <h3>⭐️ &lt;html&gt; 태그</h3>
-      <p>
-        &lt;html&gt; 태그는 !DOCTYPE을 선언 한 후 html의 문서의 시작과 끝을 알려주는 태그이다.<br>
-        &lt;html&gt; 태그의 속성으로는 lang 이라는 속성이 들어가며, 이는 language의 약자로, 웹브라우저의 표준 언어를 지정하는데 사용된다.<br>
-        en = 영어 / ko = 한국어 / ja = 일본 등의 속성값이 존재한다.
-      </p>
+      <article>
+        <h3>⭐️ &lt;html&gt; 태그</h3>
+        <p>
+          &lt;html&gt; 태그는 !DOCTYPE을 선언 한 후 html의 문서의 시작과 끝을 알려주는 태그이다.<br>
+          &lt;html&gt; 태그의 속성으로는 lang 이라는 속성이 들어가며, 이는 language의 약자로, 웹브라우저의 표준 언어를 지정하는데 사용된다.<br>
+          en = 영어 / ko = 한국어 / ja = 일본 등의 속성값이 존재한다.
+        </p>
+      </article>
       <!-- html Section -->
 
       <!-- head Section -->
-      <h3>⭐️ &lt;head&gt; 태그</h3>
-      <p>
-        &lt;head&gt; 태그는 &lt;html&gt; 태그 밑에 작성되며, 웹브라우저의 정보 이름이나 언어방식 등이 작성되어있다.<br>
-        대표적으로 &lt;meta&gt; 태그와 &lt;title&gt; 태그가 있다.<br><br>
-        <table class="table">
-          <tr>
-            <th>&lt;meta&gt;</th>
-            <td>태그는 웹브라우저의 언어, 정보, 키워드 등을 작성할 수 있다.</td>
-          </tr>
-          <tr>
-            <th>&lt;title&gt;</th>
-            <td>웹브라우저의 제목을 작성할 수 있다. </td>
-          </tr>
-        </table>         
-      </p>
+      <article>
+        <h3>⭐️ &lt;head&gt; 태그</h3>
+        <p>
+          &lt;head&gt; 태그는 &lt;html&gt; 태그 밑에 작성되며, 웹브라우저의 정보 이름이나 언어방식 등이 작성되어있다.<br>
+          대표적으로 &lt;meta&gt; 태그와 &lt;title&gt; 태그가 있다.<br><br>
+          <table class="table">
+            <tr>
+              <th>&lt;meta&gt;</th>
+              <td>태그는 웹브라우저의 언어, 정보, 키워드 등을 작성할 수 있다.</td>
+            </tr>
+            <tr>
+              <th>&lt;title&gt;</th>
+              <td>웹브라우저의 제목을 작성할 수 있다. </td>
+            </tr>
+          </table>         
+        </p>
+      </article>
       <!-- // head Section -->
 
       <!-- link tag -->
-      <h3>⭐️ &lt;link&gt; 태그</h3>
-      <p>빈 요소(Empty Element)이며, head 태그 안에 사용된다. 외부에서 문서를 가져올 때 사용하는 태그이다. 주로, css, javascript 같은 문서를 불러오는데 사용한다.</p>
-      <div class="linewrap">
-        <span class="line">
-          &lt;link <span class="skyblue">rel</span> = <span class="orange">현재 문서와의 관계</span> <span class="skyblue">href</span> = <span class="orange">외부 문서의 링크(경로)</span>&gt;<br><br>
-          <span class="skyblue">rel 속성</span><br><span class="white">: 불러 올 외부 문서와 현재 작성되고 있는 문서와의 관계를 나타낸다. 주로 사용되는 stylesheet 는 css 문서를 불러올 때 사용되는 속성값이고, icon은 favicon을 불러올 때 사용되는 속성값이다.</span><br>
-          <span class="skyblue">href 속성</span><br><span class="white">: 불러 올 외부 문서의 링크(경로)를 작성하여 현재 작성되는 페이지에서 작성된 속성값의 경로에서 문서를 가져오는 역할을 한다.</span>
-        </span>
-      </div>
+      <article>
+        <h3>⭐️ &lt;link&gt; 태그</h3>
+        <p>빈 요소(Empty Element)이며, head 태그 안에 사용된다. 외부에서 문서를 가져올 때 사용하는 태그이다. 주로, css, javascript 같은 문서를 불러오는데 사용한다.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;link <span class="skyblue">rel</span> = <span class="orange">현재 문서와의 관계</span> <span class="skyblue">href</span> = <span class="orange">외부 문서의 링크(경로)</span>&gt;<br><br>
+            <span class="skyblue">rel 속성</span><br><span class="white">: 불러 올 외부 문서와 현재 작성되고 있는 문서와의 관계를 나타낸다. 주로 사용되는 stylesheet 는 css 문서를 불러올 때 사용되는 속성값이고, icon은 favicon을 불러올 때 사용되는 속성값이다.</span><br>
+            <span class="skyblue">href 속성</span><br><span class="white">: 불러 올 외부 문서의 링크(경로)를 작성하여 현재 작성되는 페이지에서 작성된 속성값의 경로에서 문서를 가져오는 역할을 한다.</span>
+          </span>
+        </div>
+      </article>
       <!-- // link tag -->
 
       <!-- body Section -->
-      <h3>⭐️ &lt;body&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
-      <p>
-        &lt;body&gt; 태그는 html 문서의 내용을 작성하며, 여러가지 요소들을 구조와 문법에 맞게 작성하면, 웹페이지를 원하는 구조로 작성 할 수 있다.<br>
-      </p>
+      <article>
+        <h3>⭐️ &lt;body&gt; 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>
+          &lt;body&gt; 태그는 html 문서의 내용을 작성하며, 여러가지 요소들을 구조와 문법에 맞게 작성하면, 웹페이지를 원하는 구조로 작성 할 수 있다.<br>
+        </p>
+      </article>
       <!-- // body Section -->
 
       <!-- Example -->
-      <div class="linewrap">
-        <span class="line">
-          &lt;!DOCTYPE <span class="skyblue">html</span>&gt;<br>
-          &lt;html <span class="skyblue">lang</span>=<span class="orange">"ko"</span>&gt;<br>
-          &lt;head&gt;<br>
-          <div class="mgl20">
-            &lt;meta <span class="skyblue">charset</span>=<span class="orange">"UTF-8"</span>&gt;<br>
-            &lt;meta <span class="skyblue">http-equiv</span>=<span class="orange">"X-UA-Compatible"</span> <span class="skyblue">content</span>=<span class="orange">"IE=edge"</span>&gt;<br>
-            &lt;meta <span class="skyblue">name</span>=<span class="orange">"viewport"</span> <span class="skyblue">content</span>=<span class="orange">"width=device-width, initial-scale=1.0"</span>&gt;<br>
-            &lt;title&gt;<span class="white">Document</span>&lt;/title&gt;
-          </div>
-          &lt;/head&gt;<br>
-          &lt;body&gt;<br>
-          <span class="white">Contents</span><br>
-          &lt;/body&gt;<br>
-          &lt;/html&gt;<br>
-        </span> 
-      </div>
-      <p>위의 예시와 같이 DOCTYPE 선언 후 html태그가 나오고, head태그와 body태그가 차례로 나오는 구조를 가지게된다.</p>
+      <article>
+        <div class="linewrap">
+          <span class="line">
+            &lt;!DOCTYPE <span class="skyblue">html</span>&gt;<br>
+            &lt;html <span class="skyblue">lang</span>=<span class="orange">"ko"</span>&gt;<br>
+            &lt;head&gt;<br>
+            <div class="mgl20">
+              &lt;meta <span class="skyblue">charset</span>=<span class="orange">"UTF-8"</span>&gt;<br>
+              &lt;meta <span class="skyblue">http-equiv</span>=<span class="orange">"X-UA-Compatible"</span> <span class="skyblue">content</span>=<span class="orange">"IE=edge"</span>&gt;<br>
+              &lt;meta <span class="skyblue">name</span>=<span class="orange">"viewport"</span> <span class="skyblue">content</span>=<span class="orange">"width=device-width, initial-scale=1.0"</span>&gt;<br>
+              &lt;title&gt;<span class="white">Document</span>&lt;/title&gt;
+            </div>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            <span class="white">Contents</span><br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+          </span> 
+        </div>
+        <p>위의 예시와 같이 DOCTYPE 선언 후 html태그가 나오고, head태그와 body태그가 차례로 나오는 구조를 가지게된다.</p>
+      </article>
       <!-- // Example -->
 
       <!-- heading tag -->
-      <h3>⭐️ Heading 태그 <span class="element mgl20">Block Level Element</span></h3>
-      <p>제목을 단계별로 나타내며, h1~h6으로 구성되어있다. 문서의 대제목부터 차례로 사용하며, 대제목은 h1 태그를 사용하되, h1 태그는 중복 사용은 피하는 것이 좋다.</p>
-      <div class="linewrap">
-        <span class="line">
-          &lt;h1&gt; 대제목 &lt;/h1&gt;<br>
-          &lt;h2&gt; 소제목 &lt;/h2&gt;<br>
-          &lt;h3&gt; 소소제목 &lt;/h3&gt;<br>
-          <span class="white">등 제목간의 중요도를 나타낼 때 사용한다.</span>
-        </span> 
-      </div>
+      <article>
+        <h3>⭐️ Heading 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>제목을 단계별로 나타내며, h1~h6으로 구성되어있다. 문서의 대제목부터 차례로 사용하며, 대제목은 h1 태그를 사용하되, h1 태그는 중복 사용은 피하는 것이 좋다.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;h1&gt; 대제목 &lt;/h1&gt;<br>
+            &lt;h2&gt; 소제목 &lt;/h2&gt;<br>
+            &lt;h3&gt; 소소제목 &lt;/h3&gt;<br>
+            <span class="white">등 제목간의 중요도를 나타낼 때 사용한다.</span>
+          </span> 
+        </div>
+      </article>
       <!-- // heading tag -->
 
       <!-- paragraphs tag -->
-      <h3>⭐️ &lt;p&gt; (Paragraphs) 태그 <span class="element mgl20">Block Level Element</span></h3>
-      <p>하나의 문장이나 문단을 설정할 때 사용하는 태그이다.</p>
-      <div class="linewrap">
-        <span class="line">
-          &lt;p&gt; <span class="white">안녕하세요?</span> &lt;/p&gt;<br>
-          &lt;p&gt; <span class="white">정종성입니다.</span> &lt;/p&gt;<br>
-        </span>
-      </div>
+      <article>
+        <h3>⭐️ &lt;p&gt; (Paragraphs) 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>하나의 문장이나 문단을 설정할 때 사용하는 태그이다.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;p&gt; <span class="white">안녕하세요?</span> &lt;/p&gt;<br>
+            &lt;p&gt; <span class="white">정종성입니다.</span> &lt;/p&gt;<br>
+          </span>
+        </div>
+      </article>
       <!-- // paragraphs tag -->
 
       <!-- hr tag -->
-      <h3>⭐️ &lt;hr /&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
-      <p>빈 요소(Empty Element)로 단독으로 사용되며, 주제가 변경되거나 구분을 주고 싶을 때 사용되며, 사용시 아래 예시와 같이 구분선이 생성된다.</p>
-      <div class="linewrap">
-        <span class="line">
-          &lt;span&gt; <span class="white">첫번째주제</span> &lt;/span&gt; &lt;hr /&gt;<hr class="hrex">
-          &lt;span&gt; <span class="white">두번째주제</span> &lt;/span&gt;<br>
-        </span>
-      </div>
+      <article>
+        <h3>⭐️ &lt;hr /&gt; 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>빈 요소(Empty Element)로 단독으로 사용되며, 주제가 변경되거나 구분을 주고 싶을 때 사용되며, 사용시 아래 예시와 같이 구분선이 생성된다.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;span&gt; <span class="white">첫번째주제</span> &lt;/span&gt; &lt;hr /&gt;<hr class="hrex">
+            &lt;span&gt; <span class="white">두번째주제</span> &lt;/span&gt;<br>
+          </span>
+        </div>
+      </article>
       <!-- // hr tag -->
 
       <!-- blockquote tag -->
-      <h3>⭐️ &lt;blockquote&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
-      <p>
-        일반적으로 어떠한 문구를 인용하여 가져올 때 사용된다. 즉, 인용문을 가져올 때 사용하는 태그이다.<br>
-        속성으로는 cite 속성이 있으며, cite 속성값으로는 인용된 정보의 출처(URL)을 입력한다.
-      </p>
-      <div class="linewrap">
-        <span class="line">
-          &lt;blockquote <span class="skyblue">cite</span> = <span class="orange">"인용문의 출처(URL)"</span>&gt; <span class="white">인용문</span> &lt;/blockquote&gt;
-        </span>
-      </div>
+      <article>
+        <h3>⭐️ &lt;blockquote&gt; 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>
+          일반적으로 어떠한 문구를 인용하여 가져올 때 사용된다. 통상적으로 긴 인용문을 가져올 때 사용하는 태그이다.<br>
+          속성으로는 cite 속성이 있으며, cite 속성값으로는 인용된 정보의 출처(URL)을 입력한다.
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;blockquote <span class="skyblue">cite</span> = <span class="orange">"인용문의 출처(URL)"</span>&gt; <span class="white">긴 인용문</span> &lt;/blockquote&gt;
+          </span>
+        </div>
+      </article>
       <!-- // blockquote tag -->
 
+      <!-- q tag -->
+      <article>
+        <h3>⭐️ &lt;q&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          &lt;q&gt;태그는 짧은 인용문을 설정할때 사용한다.<br>
+          &lt;blockquote&gt;는 긴 인용문을 설정할때 사용하고, 블록 레벨요소인 점이 다르다.<br>
+          속성으로는 &lt;blockquote&gt;와 동일하게 cite 속성이 있으며, cite 속성값으로는 인용된 정보의 출처(URL)을 입력한다.
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;q <span class="skyblue">cite</span> = <span class="orange">"인용문의 출처(URL)"</span>&gt; <span class="white">짧은 인용문</span> &lt;/q&gt;
+          </span>
+        </div>
+        <p>용어의 대한 설명을 지정하여 작성하여준다. 하나의 용어에 여러개의 설명이 있다면, &lt;dd&gt; 태그를 추가하여 작성해주면 된다.</p>
+      </article>
+      <!-- // q tag -->
+
       <!-- pre tag -->
-      <h3>⭐️ &lt;pre&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
-      <p>서식이 미리 지정된 텍스트를 보여주는 태그이다. html 문서 내의 줄바꿈이나 공백을 특정한 태그와 함께 사용하여 표현해야 하는데, pre 태그 안에서는 작성한 내용대로 화면에 표시한다.</p>
-      <div class="linewrap">
-        <span class="line">
-          &lt;pre&gt;<br>
-          <span class="white">
-            pre 태그 안에서 &lt;br&gt;태그가 없이<br>
-            줄바꿈을 진행해도<br>
-            줄바꿈이 표현이 된다.
-          </span><br>
-          &lt;/pre&gt;
-        </span>
-      </div>
+      <article>
+        <h3>⭐️ &lt;pre&gt; 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>서식이 미리 지정된 텍스트를 보여주는 태그이다. html 문서 내의 줄바꿈이나 공백을 특정한 태그와 함께 사용하여 표현해야 하는데, pre 태그 안에서는 작성한 내용대로 화면에 표시한다.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;pre&gt;<br>
+            <span class="white">
+              pre 태그 안에서 &lt;br&gt;태그가 없이<br>
+              줄바꿈을 진행해도<br>
+              줄바꿈이 표현이 된다.
+            </span><br>
+            &lt;/pre&gt;
+          </span>
+        </div>
+      </article>
       <!-- // pre tag -->
 
       <!-- br tag -->
-      <h3>⭐️ &lt;br /&gt; 태그 <span class="element mgl20">Inline Level Element</span></h3>
-      <p>빈 요소(Empty Element)로 단독으로 사용되며, 줄바꿈을 하고 싶을 때 사용한다.</p>
-      <div class="linewrap">
-        <span class="line">
-          &lt;span&gt; <span class="white">안녕하세요?</span> &lt;/span&gt; &lt;br /&gt;<br>
-          &lt;span&gt; <span class="white">정종성입니다.</span> &lt;/span&gt;<br>
-        </span>
-      </div>
+      <article>
+        <h3>⭐️ &lt;br /&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>빈 요소(Empty Element)로 단독으로 사용되며, 줄바꿈을 하고 싶을 때 사용한다.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;span&gt; <span class="white">안녕하세요?</span> &lt;/span&gt; &lt;br /&gt;<br>
+            &lt;span&gt; <span class="white">정종성입니다.</span> &lt;/span&gt;<br>
+          </span>
+        </div>
+      </article>
       <!-- // br tag -->
 
       <!-- ol, ul tag -->
-      <h3>⭐️ &lt;ol&gt;,&lt;ul&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
-      <p>
-        이 두개의 태그는 목록을 나타낼 때 사용한다. 순차적 목록(Ordered list)인 &lt;ol&gt;, 비순차적 목록(Unordered list)인 &lt;ul&gt; 이 있다.<br>
-        이 두개의 태그 안에는 &lt;li&gt; 태그만이 자식으로 들어갈 수 있다.
-      </p>
-      <!-- ol tag example -->
-      <div class="linewrap">
-        <span class="line">
-          &lt;ol&gt;
-          <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
-          <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
-          <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
-          &lt;/ol&gt;
-          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
-          <ol class="white ollist-ex">
-            <li>첫번째</li>
-            <li>두번째</li>
-            <li>세번째</li>
-          </ol>
-        </span>
-      </div>
-      <p>&lt;ol&gt; 태그는 순차적인 목록을 작성할 때 사용한다.</p>
+      <article>
+        <h3>⭐️ &lt;ol&gt;,&lt;ul&gt; 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>
+          이 두개의 태그는 목록을 나타낼 때 사용한다. 순차적 목록(Ordered list)인 &lt;ol&gt;, 비순차적 목록(Unordered list)인 &lt;ul&gt; 이 있다.<br>
+          이 두개의 태그 안에는 &lt;li&gt; 태그만이 자식으로 들어갈 수 있다.
+        </p>
+        <!-- ol tag example -->
+        <div class="linewrap">
+          <span class="line">
+            &lt;ol&gt;
+            <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
+            <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
+            <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
+            &lt;/ol&gt;
+            <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+            <ol class="white ollist-ex">
+              <li>첫번째</li>
+              <li>두번째</li>
+              <li>세번째</li>
+            </ol>
+          </span>
+        </div>
+        <p>&lt;ol&gt; 태그는 순차적인 목록을 작성할 때 사용한다.</p>
 
-      <div class="linewrap">
-        <span class="line">
-          &lt;ol <span class="skyblue">type</span>= <span class="orange">"a"</span> <span class="skyblue">start</span> = <span class="orange">"4"</span> <span class="skyblue">reversed</span>&gt;
-          <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
-          <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
-          <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
-          &lt;/ol&gt;
-          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
-          <ol class="white ollist-ex" type="a" start="4" reversed>
-            <li>첫번째</li>
-            <li>두번째</li>
-            <li>세번째</li>
-          </ol>
-        </span>
-      </div>
-      <p>
-        &lt;ol&gt; 태그의 속성인 type 속성에 속성값으로 " 1(기본값), a, A, i, I "가 있으며, 항목에 사용할 번호의 종류 설정한다.<br>
-        &lt;ol&gt; 태그의 속성인 start 속성에 숫자를 입력하면 항목의 시작 숫자 설정한다.<br>
-        &lt;ol&gt; 태그의 속성인 reversed는 말 그대로, 순서를 역순으로 설정해서 보여준다.<br>
-      </p>
-      <!-- // ol tag example -->
+        <div class="linewrap">
+          <span class="line">
+            &lt;ol <span class="skyblue">type</span>= <span class="orange">"a"</span> <span class="skyblue">start</span> = <span class="orange">"4"</span> <span class="skyblue">reversed</span>&gt;
+            <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
+            <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
+            <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
+            &lt;/ol&gt;
+            <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+            <ol class="white ollist-ex" type="a" start="4" reversed>
+              <li>첫번째</li>
+              <li>두번째</li>
+              <li>세번째</li>
+            </ol>
+          </span>
+        </div>
+        <p>
+          &lt;ol&gt; 태그의 속성인 type 속성에 속성값으로 " 1(기본값), a, A, i, I "가 있으며, 항목에 사용할 번호의 종류 설정한다.<br>
+          &lt;ol&gt; 태그의 속성인 start 속성에 숫자를 입력하면 항목의 시작 숫자 설정한다.<br>
+          &lt;ol&gt; 태그의 속성인 reversed는 말 그대로, 순서를 역순으로 설정해서 보여준다.<br>
+        </p>
+        <!-- // ol tag example -->
 
-      <!-- ul tag example -->
-      <div class="linewrap">
-        <span class="line">
-          &lt;ul&gt;
-          <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
-          <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
-          <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
-          &lt;/ul&gt;
-          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
-          <ul class="white ullist-ex">
-            <li>첫번째</li>
-            <li>두번째</li>
-            <li>세번째</li>
-          </ul>
-        </span>
-      </div>
-      <p>&lt;ul&gt; 태그는 비순차적인 목록을 작성할 때 사용한다.</p>
+        <!-- ul tag example -->
+        <div class="linewrap">
+          <span class="line">
+            &lt;ul&gt;
+            <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
+            <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
+            <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
+            &lt;/ul&gt;
+            <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+            <ul class="white ullist-ex">
+              <li>첫번째</li>
+              <li>두번째</li>
+              <li>세번째</li>
+            </ul>
+          </span>
+        </div>
+        <p>&lt;ul&gt; 태그는 비순차적인 목록을 작성할 때 사용한다.</p>
 
-      <div class="linewrap">
-        <span class="line">
-          &lt;ul <span class="skyblue">type</span>= <span class="orange">"square"</span>&gt;
-          <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
-          <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
-          <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
-          &lt;/ul&gt;
-          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
-          <ul type="square" class="white ullist-ex2">
-            <li>첫번째</li>
-            <li>두번째</li>
-            <li>세번째</li>
-          </ul>
-        </span>
-      </div>
-      <p>&lt;ul&gt; 태그의 속성인 type 속성에 속성값으로 " disc(기본값), square, circle, none " 이 있으며, 항목에 사용할 기호의 종류 설정한다.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;ul <span class="skyblue">type</span>= <span class="orange">"square"</span>&gt;
+            <div class="secondline">&lt;li&gt; <span class="white">첫번째</span> &lt;/li&gt;</div>
+            <div class="secondline">&lt;li&gt; <span class="white">두번째</span> &lt;/li&gt;</div>
+            <div class="secondline">&lt;li&gt; <span class="white">세번째</span> &lt;/li&gt;</div>
+            &lt;/ul&gt;
+            <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+            <ul type="square" class="white ullist-ex2">
+              <li>첫번째</li>
+              <li>두번째</li>
+              <li>세번째</li>
+            </ul>
+          </span>
+        </div>
+        <p>&lt;ul&gt; 태그의 속성인 type 속성에 속성값으로 " disc(기본값), square, circle, none " 이 있으며, 항목에 사용할 기호의 종류 설정한다.</p>
+      </article>
       <!-- // ul tag example -->
       <!-- // ol, ul tag -->
 
       <!-- li tag -->
-      <h3>⭐️ &lt;li&gt; 태그 <span class="element mgl20">list-item Element</span></h3>
-      <p>
-        이 태그는 목록의 리스트를 나타낼 때 사용한다. &lt;li&gt; 태그는 단독으로 사용이 불가능하며, 꼭 &lt;ul&gt; 혹은 &lt;ul&gt; 태그를 부모로 두어야 사용이 가능하다.<br>
-        위의 &lt;ol&gt;, &lt;ul&gt; 의 예시만 보아도 사용법을 알 수 있다.
-      </p>
+      <article>
+        <h3>⭐️ &lt;li&gt; 태그<br> <span class="element mgl20 mgt10">list-item Element</span></h3>
+        <p>
+          이 태그는 목록의 리스트를 나타낼 때 사용한다. &lt;li&gt; 태그는 단독으로 사용이 불가능하며, 꼭 &lt;ul&gt; 혹은 &lt;ul&gt; 태그를 부모로 두어야 사용이 가능하다.<br>
+          위의 &lt;ol&gt;, &lt;ul&gt; 의 예시만 보아도 사용법을 알 수 있다.
+        </p>
+      </article>
       <!-- // li tag -->
 
       <!-- dl,dt,dd tag -->
-      <h3>⭐️ &lt;dl&gt;,&lt;dt&gt;,&lt;dd&gt; 태그 <span class="element mgl20">Block Level Element</span></h3>
-      <p>
-        위의 태그들은 용어에 대한 설명을 지정하여 사용하는 태그이다. &lt;dl&gt; 태그 안에는 &lt;dt&gt;, &lt;dd&gt; 외의 태그는 자식으로 존재가 불가능하다.<br>
-        <ul class="ullist-ex">
-          <li>
-            <p>&lt;dl&gt; : 해당 범위가 용어와 용어에 대한 설명임을 정의한다.</p>
-          </li>
-          <li>
-            <p>&lt;dt&gt; : 용어를 지칭한다.</p>
-          </li>
-          <li>
-            <p>&lt;dd&gt; : 용어에 대한 설명을 일컫는다.</p>
-          </li>
-        </ul>
-      </p>
-      <!-- ol tag example -->
-      <div class="linewrap">
-        <span class="line">
-          &lt;dl&gt;
-          <div class="secondline">&lt;dt&gt; <span class="white">Firefox</span> &lt;/dt&gt;</div>
-          <div class="secondline">&lt;dd&gt; <span class="white">모질라 재단에서 만든 웹 브라우저</span> &lt;/dd&gt;</div>
-          &lt;/dl&gt;
-          <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
-          <dl class="white">
-            <dt>Firefox</dt>
-            <dd>모질라 재단에서 만든 웹 브라우저</dd>
-          </dl>
-        </span>
-      </div>
-      <p>용어의 대한 설명을 지정하여 작성하여준다. 하나의 용어에 여러개의 설명이 있다면, &lt;dd&gt; 태그를 추가하여 작성해주면 된다.</p>
+      <article>
+        <h3>⭐️ &lt;dl&gt;,&lt;dt&gt;,&lt;dd&gt; 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>
+          위의 태그들은 용어에 대한 설명을 지정하여 사용하는 태그이다. &lt;dl&gt; 태그 안에는 &lt;dt&gt;, &lt;dd&gt; 외의 태그는 자식으로 존재가 불가능하다.<br>
+          <ul class="ullist-ex">
+            <li>
+              <p>&lt;dl&gt; : 해당 범위가 용어와 용어에 대한 설명임을 정의한다.</p>
+            </li>
+            <li>
+              <p>&lt;dt&gt; : 용어를 지칭한다.</p>
+            </li>
+            <li>
+              <p>&lt;dd&gt; : 용어에 대한 설명을 일컫는다.</p>
+            </li>
+          </ul>
+        </p>
+        <!-- dl,dt,dd tag example -->
+        <div class="linewrap">
+          <span class="line">
+            &lt;dl&gt;
+            <div class="secondline">&lt;dt&gt; <span class="white">Firefox</span> &lt;/dt&gt;</div>
+            <div class="secondline">&lt;dd&gt; <span class="white">모질라 재단에서 만든 웹 브라우저</span> &lt;/dd&gt;</div>
+            &lt;/dl&gt;
+            <p class="white">위와 같이 작성을 하게되면 아래와 같은 결과를 가지게된다.</p>
+            <dl class="white">
+              <dt>Firefox</dt>
+              <dd>모질라 재단에서 만든 웹 브라우저</dd>
+            </dl>
+          </span>
+        </div>
+        <p>용어의 대한 설명을 지정하여 작성하여준다. 하나의 용어에 여러개의 설명이 있다면, &lt;dd&gt; 태그를 추가하여 작성해주면 된다.</p>
+      </article>
       <!-- // dl,dt,dd tag -->
+
+      <!-- div tag -->
+      <article>
+        <h3>⭐️ &lt;div&gt; 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>
+          &lt;div&gt; 태그는 Division의 약자로 문서 내에서 영역이나 섹션을 정의하기 위한 태그이다. 아무 의미를 가지지않는 태그이며, 컨텐츠를 채워넣고 스타일을 위한 태그로 많이 사용된다.<br>
+        </p>
+      </article>
+      <!-- // div tag -->
+
+      <!-- span tag -->
+      <article>
+        <h3>⭐️ &lt;span&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          &lt;span&gt; 태그는 &lt;span&gt; 태그와 같이 아무 의미를 가지지않는 태그이며, 용도도 비슷하지만 인라인 레벨요소로 구분해서 사용해야하며, 주로 인라인 요소들을 묶을 때 사용한다.<br>
+        </p>
+      </article>
+      <!-- // span tag -->
+
+      <!-- bold tag -->
+      <article>
+        <h3>⭐️ &lt;b&gt;,&lt;strong&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          두 태그 모두 기본적으로 텍스트를 볼드체로 변경시켜준다. 그러나 그 둘은 서로 다른 의미로 사용이 된다.
+          <ul class="ullist-ex">
+            <li>
+              <p>
+                &lt;b&gt; : 단순히 다른 텍스트와 다르게 구별하고 싶을 때 사용
+              </p>
+            </li>
+            <li>
+              <p>
+                &lt;strong&gt; : 중요한 의미를 갖는 텍스트를 나타낼 때 사용 (강조, 경고, 주의사항 등)
+              </p>
+            </li>
+          </ul>
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;p&gt; &lt;b&gt; <span class="white">HTML</span> &lt;/b&gt; <span class="white">은 Hyper Text Markup Language의 약자이다.</span> &lt;/p&gt;<br>
+            &lt;p&gt; <span class="white">자전거를 타기 전에.</span> &lt;strong&gt; <span class="white">헬멧을 꼭 착용</span> &lt;/strong&gt; <span class="white">하세요.</span> &lt;/p&gt;<br>
+            <div class="white bold-ex">
+              <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+              <p><b>HTML</b>이란 Hyper Text Markup Language의 약자이다.</p>
+              <p>자전거를 타기 전에 <strong>헬멧을 꼭 착용</strong>하세요.</p>
+            </div>
+          </span>
+        </div>
+      </article>
+      <!-- // bold tag -->
+
+      <!-- italic tag -->
+      <article>
+        <h3>⭐️ &lt;i&gt;,&lt;em&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          두 태그 모두 기본적으로 텍스트를 이탤릭체로 변경시켜준다. 그러나 그 둘은 서로 다른 의미로 사용이 된다.
+          <ul class="ullist-ex">
+            <li>
+              <p>
+                &lt;i&gt; : 기술용어, 외국어, 등장인물의 생각 등 일반적인 글자와 구분하기 위해 사용한다.
+              </p>
+            </li>
+            <li>
+              <p>
+                &lt;em&gt; : 강조하고 싶은 텍스트를 나타낼 때 사용하며, 중첩이 가능해 많이 사용할수록 강조의 의미가 강해진다.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;p&gt; <span class="white">라틴어 문구</span> &lt;i&gt; <span class="white">veni, vidi, viciL</span> &lt;/i&gt; <span class="white">는 음악과 예술, 문학에 자주 등장합니다.</span> &lt;/p&gt;<br>
+            &lt;p&gt; <span class="white"></span> &lt;em&gt;&lt;em&gt; <span class="white">I Love You</span> &lt;/em&gt;&lt;/em&gt; <span class="white"></span> &lt;/p&gt;
+            <div class="white">
+              <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+              <p>라틴어 문구 <i lang="en">veni, vidi, vici</i>는 음악과 예술, 문학에 자주 등장합니다.</p>
+              <p><em><em>나는 당신을 사랑합니다.</em></em></p>
+            </div>
+          </span>
+        </div>
+      </article>
+      <!-- // italic tag -->
+
+      <!-- mark tag -->
+      <article>
+        <h3>⭐️ &lt;mark&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>하이라이트를 표현한다. 형광펜을 사용한 효과를 나타내며, 관심있는 부분을 나타낼 때 사용한다.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;p&gt; &lt;mark&gt; <span class="white">CSS</span> &lt;/mark&gt; <span class="white">는 Cascading Style Sheet의 약자이다.</span> &lt;/p&gt;
+          </span>
+          <div class="white">
+            <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+            <p><mark>CSS</mark>는 Cascading Style Sheet의 약자이다.</p>
+          </div>
+        </div>
+      </article>
+      <!-- // mark tag -->
+
+      <!-- underline tag -->
+      <article>
+        <h3>⭐️ &lt;u&gt;,&lt;ins&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          두 태그 모두 밑줄을 표현해준다. 그러나 그 둘은 서로 다른 의미로 사용이 된다.
+          <ul class="ullist-ex">
+            <li>
+              <p>
+                &lt;u&gt; : 맞춤법이 틀린 텍스트를 표현할 때 사용한다.
+              </p>
+            </li>
+            <li>
+              <p>
+                &lt;ins&gt; : 없던 내용이 추가되어 변경되었다는 것을 나타낼 때 사용한다.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;p&gt; <span class="white">맞춤법이 틀리면</span> &lt;u&gt; <span class="white">않돼요.</span> &lt;/u&gt; &lt;/p&gt;<br>
+            &lt;p&gt; <span class="white">맞춤법이 틀리면</span> &lt;u&gt; <span class="white">않돼요.</span> &lt;/u&gt; &lt;ins&gt; <span class="white">맞춤법 확인합시다!</span> &lt;/ins&gt; &lt;/p&gt;
+            <div class="white">
+              <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+              <p>맞춤법이 틀리면 <u>않돼요</u>.</p>
+              <p>맞춤법이 틀리면 <u>않돼요</u>. <ins>맞춤법 확인합시다!</ins></p>
+            </div>
+          </span>
+        </div>
+      </article>
+      <!-- // underline tag -->
+
+      <!-- cancel tag -->
+      <article>
+        <h3>⭐️ &lt;s&gt;,&lt;del&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          두 태그 모두 텍스트 중앙 취소선을 표시해준다. 그러나 그 둘은 서로 다른 의미로 사용이 된다.
+          <ul class="ullist-ex">
+            <li>
+              <p>
+                &lt;s&gt; : 정확하지 않고, 관련성이 없는 내용을 나타낼 때 사용한다.
+              </p>
+            </li>
+            <li>
+              <p>
+                &lt;del&gt; : 기존에 있던 내용이 삭제되고 변경되었다는 것을 나타낼 때 사용한다.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;p&gt; <span class="white">감자 1kg에</span> &lt;s&gt; <span class="white">10,000원</span> &lt;/s&gt; &lt;em&gt; <span class="white">할인가 7,900원</span> &lt;/em&gt; &lt;/p&gt;<br>
+            &lt;p&gt; <span class="white">내가 좋아하는 색은 </span> &lt;del&gt; <span class="white">핑크색</span> &lt;/del&gt; &lt;ins&gt; <span class="white">보라색</span> &lt;/ins&gt; &lt;/p&gt;<br>
+            <div class="white">
+              <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+              <p>감자 1kg에 <s>10,000원</s> <em>할인가 7,900원</em></p>
+              <p>내가 좋아하는 색은 <del>핑크색</del> <ins>보라색</ins> 이다.</p>
+            </div>
+          </span>
+        </div>
+      </article>
+      <!-- // cancel tag -->
+
+      <!-- 첨자 tag -->
+      <article>
+        <h3>⭐️ &lt;sup&gt;,&lt;sub&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          이 태그들은 위 첨자, 아래 첨자를 표현해준다.
+          <ul class="ullist-ex">
+            <li>
+              <p>
+                &lt;sup&gt; : Superscripted text의 약자로 위 첨자를 나타낸다.
+              </p>
+            </li>
+            <li>
+              <p>
+                &lt;sub&gt; : Subscript text의 약자로 아래 첨자를 나타낸다.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;p&gt; <span class="white">2</span> &lt;sup&gt; <span class="white">2</span> &lt;sup&gt; &lt;/p&gt;<br>
+            &lt;p&gt; <span class="white">CO</span> &lt;sub&gt; <span class="white">2</span> &lt;sub&gt; &lt;/p&gt;<br>
+            <div class="white">
+              <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+              <p>2<sup>2</sup></p>
+              <p>CO<sub>2</sub></p>
+            </div>
+          </span>
+        </div>
+      </article>
+      <!-- // 첨자 tag -->
+
+      <!-- small tag -->
+      <article>
+        <h3>⭐️ &lt;small&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          &lt;small&gt; 태그는 작은 텍스트로 표현되며, 주로 저작권을 표시할 때 사용한다.
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;p&gt; <span class="white">기본글자</span> &lt;small&gt; <span class="white">저작권표시</span> &lt;small&gt; &lt;/p&gt;<br>
+            <div class="white">
+              <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+              <p>기본글자 <small>저작권표시</small> </p>
+            </div>
+          </span>
+        </div>
+      </article>
+      <!-- // small tag -->
+
+      <!-- ruby tag -->
+      <article>
+        <h3>⭐️ &lt;ruby&gt;, &lt;rt&gt;, &lt;rb&gt;, &lt;rp&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>
+          &lt;ruby&gt; 태그는 동아시아 글자를 표현할 때 주로 사용하는 루비문자이다. 주로 일본어나 중국어(한자) 등 위에 발음을 작은 텍스트의 위/아래 첨자로 알려주는 루비주석을 설정할 때 사용한다.
+          <ul class="ullist-ex">
+            <li>
+              <p>
+                &lt;ruby&gt; : 루비문자의 범위를 지정합니다.
+              </p>
+            </li>
+            <li>
+              <p>
+                &lt;rt&gt; : Ruby Top의 약자로 루비문자의 상단 주석을 설정한다.
+              </p>
+            </li>
+            <li>
+              <p>
+                &lt;rb&gt; : Ruby Bottom의 약자로 루비문자의 하단 주석을 설정한다.
+              </p>
+            </li>
+            <li>
+              <p>
+                &lt;rp&gt; : Ruby Parentheses의 약자로 루비문자를 지원하지 않는 브라우저에 괄호를 표시해준다.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;ruby&gt;
+              <div class="secondline">
+                <span class="white">漢</span> &lt;rp&gt; <span class="white">(</span> &lt;/rp&gt; &lt;rt&gt; <span class="white">kan</span> &lt;rt&gt; &lt;rp&gt; <span class="white">)</span> &lt;/rp&gt; &lt;sup&gt;<br>
+                <span class="white">字</span> &lt;rp&gt; <span class="white">(</span> &lt;/rp&gt; &lt;rt&gt; <span class="white">ji</span> &lt;rt&gt; &lt;rp&gt; <span class="white">)</span> &lt;/rp&gt; &lt;sup&gt;
+              </div>
+            &lt;/ruby&gt;<br>
+          </span>
+            <div class="white">
+              <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+              <ruby>
+                漢<rp>(</rp> <rt>kan</rt> <rp>)</rp>
+                字<rp>(</rp> <rt>ji</rt> <rp>)</rp>
+            </ruby>
+            </div>
+          </span>
+        </div>
+      </article>
+      <!-- // 첨자 tag -->
     </section>
   </main>
 </body>
