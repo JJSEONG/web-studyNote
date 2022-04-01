@@ -73,6 +73,10 @@
           대표적으로 &lt;meta&gt; 태그와 &lt;title&gt; 태그가 있다.<br><br>
           <table class="table">
             <tr>
+              <th>속성명</th>
+              <th>의미</th>
+            </tr>
+            <tr>
               <th>&lt;meta&gt;</th>
               <td>태그는 웹브라우저의 언어, 정보, 키워드 등을 작성할 수 있다.</td>
             </tr>
@@ -383,6 +387,66 @@
         </p>
       </article>
       <!-- // span tag -->
+
+      <!-- anchor tag -->
+      <article>
+        <h3 id="anchor">⭐️ &lt;a&gt; (anchor) 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p id="anchortag">
+          &lt;a&gt; 태그는 하이퍼링크(Hyperlink)를 설정해주는 태그이다. 주로, 페이지 내에서 다른 페이지로 이동시켜주거나, 같은 페이지의 특정 페이지로 이동, 이메일이나 전화번호 등도 연결할 수 있는 하이퍼링크(Hyperlink)를 설정한다. &lt;a&gt; 태그에 같이 사용되는 속성을 알아보자.
+        </p>
+        <table class="table">
+          <tr>
+            <th>속성</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>href</th>
+            <td>herf 속성값으로는 이동할 링크(URL)을 작성한다.</td>
+          </tr>
+          <tr>
+            <th>target</th>
+            <td>링크(URL)을 클릭 시, 브라우저의 위치를 설정한다.</td>
+          </tr>
+        </table> 
+        <div class="linewrap">
+          <span class="line">
+            &lt;a <span class="skyblue">href</span> = <span class="orange">"이동할 URL 주소(경로)"</span> <span class="skyblue">target</span> = <span class="orange">"_self (기본값) / _blank"</span>&gt; <span class="white">이동할 경로의 설명</span> &lt;/a&gt;<br><br>
+            <div class="white">
+              target의 속성값에는 _self 와 _blank 가 있다.<br><br>
+              _self : 현재 페이지(현재 탭)에서 링크로 이동<br>
+              _blank : 새 페이지(새 탭)를 열어 링크로 이동
+            </div><br>
+            &lt;a <span class="skyblue">href</span> = <span class="orange">"https://www.naver.com"</span> <span class="skyblue">target</span> = <span class="orange">"_self"</span>&gt; <span class="white">여기서 네이버로 이동</span> &lt;/a&gt;<br>
+            &lt;a <span class="skyblue">href</span> = <span class="orange">"https://www.naver.com"</span> <span class="skyblue">target</span> = <span class="orange">"_blank"</span>&gt; <span class="white">새창에서 네이버로 이동</span> &lt;/a&gt;<br>
+            <div class="white anchor-ex">
+              <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+              <a href="https://www.naver.com" target="_self">여기서 네이버로 이동</a>
+              <a href="https://www.naver.com" target="_blank">새창에서 네이버로 이동</a>
+            </div>
+          </span>
+        </div>
+        <p>위와 같이 사용되는 편이 많으며, 그 외의 사용법도 알아보자.</p>
+        <div class="linewrap">
+          <span class="line">
+            &lt;a <span class="skyblue">href</span> = <span class="orange">"#"</span>&gt; <span class="white">임시링크</span> &lt;/a&gt;<br>
+            <span class="white">href 속성에 "#" 의 속성값을 넣으면 임시링크를 지정해 두는 것으로, 추후에 서브페이지를 만들거나, 이동 할 주소를 알았을 때, "#"을 삭제하고 링크를 적어 넣어주면 된다.</span><br>
+            <span class="anchor-ex"><a href="#">임시링크</a></span><br><br>
+
+            &lt;a <span class="skyblue">href</span> = <span class="orange">"mailto:oooo@ooo.com"</span>&gt; <span class="white">메일로 연결</span> &lt;/a&gt;<br>
+            <span class="white">href 속성에 "mailto:메일주소" 의 속성값을 넣으면 아웃룩 계정으로 메일을 작성 할 수 있다.</span><br>
+            <span class="anchor-ex"><a href="mailto:oooo@ooo.com">아웃룩 메일로 연결</a></span><br><br>
+
+            &lt;a <span class="skyblue">href</span> = <span class="orange">"tel:000-0000"</span>&gt; <span class="white">전화연결</span> &lt;/a&gt;<br>
+            <span class="white">href 속성에 "tel:전화번호" 의 속성값을 넣으면 웹에서는 반응하지 않지만, 모바일에서는 전화창으로 넘어가게되며, 지정된 전화번호가 자동으로 작성된다.</span><br>
+            <span class="anchor-ex"><a href="tel:000-0000">전화창으로 연결</a></span><br><br>
+
+            &lt;a <span class="skyblue">href</span> = <span class="orange">"#id명"</span>&gt; <span class="white">#id명으로 이동</span> &lt;/a&gt;<br>
+            <span class="white">href 속성에 "#id명" 의 속성값을 넣으면 해당 id값을 가진 부분으로 이동하게 된다.</span><br>
+            <span class="anchor-ex"><a href="#anchor">a태그 설명으로 이동!</a></span><br><br>
+          </span>
+        </div>
+      </article>
+      <!-- // anchor tag -->
 
       <!-- bold tag -->
       <article>
