@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML의 임베디드 요소(Embedded Element)</title>
+  <!-- style.css 연결 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subpage.css">
+  <link rel="stylesheet" href="./css/liststyle.css">
+  <link rel="stylesheet" href="./css/example.css">
+  <link rel="icon" href="../favicon.png">
+  <!-- fontawesome icon 연결 link -->
+  <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
+  <!-- javascript 연결 -->
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="mainlogo">
+      </a>
+    </h1>
+    <div class="hambtn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navwrap">
+      <ul>
+        <li><a href="../html/index.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mgt120">
+    <section class="container-white list-title">
+      <!-- Main title -->
+      <article>
+        <h2>HTML의 임베디드 요소(Embedded Element)</h2>
+        <h3>⭐️ 임베디드 요소(Embedded Element)</h3>
+        <p>HTML의 임베디드 요소(Embedded Element)는 다른 콘텐츠를 현재 문서에 가져와서 삽입하는 태그이다. 주로 이미지나 비디오 등을 삽입할 때 사용하며, 그 태그들의 종류와 속성을 알아보자.</p>
+      </article>
+      <!-- // Main title -->
+
+      <!-- img tag -->
+      <article>
+        <h3>⭐️ &lt;img /&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>&lt;img /&gt; 태그(Tag)는 빈 요소(Empty Element)로 사용되며, 원하는 이미지를 불러와 현재 문서에 삽입할 때 사용한다. 속성과 속성값을 같이 사용한다.</p>
+        <table class="table">
+          <tr>
+            <th>속성명</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>src [필수]</th>
+            <td>이미지의 경로를 작성하며, src="이미지 경로" 로 사용한다.</td>
+          </tr>
+          <tr>
+            <th>alt [필수]</th>
+            <td>이미지가 보이지 않을 때 이미지를 설명해주는 대체 텍스트이며, alt="설명" 으로 사용한다.</td>
+          </tr>
+          <tr>
+            <th>width</th>
+            <td>이미지의 넓이를 지정하며, width="크기" 로 사용한다.</td>
+          </tr>
+          <tr>
+            <th>height</th>
+            <td>이미지의 높이를 지정하며, height="크기" 로 사용한다.</td>
+          </tr>
+        </table>
+        <div class="linewrap">
+          <span class="line">
+            &lt;img
+            <span class="skyblue">src</span> = <span class="orange">"이미지 경로"</span>
+            <span class="skyblue">alt</span> = <span class="orange">"이미지 설명"</span>
+            <span class="skyblue">width</span> = <span class="orange">"이미지 넓이 지정"</span>
+            <span class="skyblue">height</span> = <span class="orange">"이미지 높이 지정"</span>&gt;<br>
+          </span>
+        </div>
+      </article>
+      <!-- // img tag -->
+
+      <!-- audio tag -->
+      <article>
+        <h3>⭐️ &lt;audio&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>&lt;audio&gt; 태그(Tag)는 원하는 오디오를 가져와 삽입할 때 사용한다. 여러 속성을 가지고있으며, 속성과 속성값을 같이 사용한다.</p>
+        <table class="table">
+          <tr>
+            <th>속성명</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>src [필수]</th>
+            <td>오디오의 경로를 작성하며, src="오디오 경로" 로 사용한다.</td>
+          </tr>
+          <tr>
+            <th>controls</th>
+            <td>오디오를 컨트롤 할 수 있는 제어창이 같이 생성된다.</td>
+          </tr>
+          <tr>
+            <th>autoplay</th>
+            <td>브라우저를 실행하면 오디오를 자동 실행한다.<br>단, 크롬에서 autoplay는 muted와 함께 사용하여야 적용된다.</td>
+          </tr>
+          <tr>
+            <th>loop</th>
+            <td>오디오 재생이 끝이나면 다시 반복하여 재생하여준다.</td>
+          </tr>
+          <tr>
+            <th>muted</th>
+            <td>브라우저에서 오디오의 소리를 음소거하여 재생한다.</td>
+          </tr>
+          <tr>
+            <th>preload</th>
+            <td>
+              브라우저에게 오디오 파일도 같이 로드 되어야하는지 저자가 생각하는 최적의 사용자 경험은 무엇인지 힌트를 준다.<br>
+              단, autoplay 속성이 지정되어 있으면 preload 속성은 무시된다.<br>
+              <ul class="ullist-ex">
+                <li>auto : [기본값] 문서를 불러올 때, 오디오 파일을 같이 다운로드한다.</li>
+                <li>metadata : 오디오 파일 전체를 다운로드 하지 않고, 메타데이터(metadata)만 불러온다.</li>
+                <li>none : 오디오 파일을 다운로드 하지 않는다. 재생버튼을 눌러줘야 다운로드 시작한다.</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <div class="linewrap">
+          <span class="line">
+            &lt;audio
+            <span class="skyblue">controls</span>
+            <span class="skyblue">autoplay</span>
+            <span class="skyblue">loop</span>
+            <span class="skyblue">muted</span>
+            <span class="skyblue">preload</span> = <span class="orange">"auto | metadata | none"</span>&gt;
+            <div class="secondline">
+              &lt;source <span class="skyblue">src</span> = <span class="orange">"오디오 경로"</span>&gt;
+            </div>
+            &lt;/audio&gt;<br><br>
+            &lt;source <span class="skyblue">src</span> = <span class="orange">"오디오 경로"</span>&gt; <span class="white">는 아래와 같이</span> &lt;audio&gt; <span class="white">태그의 속성으로 사용이 가능하다.</span><br>
+            &lt;audio <span class="skyblue">src</span> = <span class="orange">"오디오 경로"</span>&gt;&lt;audio&gt;
+          </span>
+        </div>
+      </article>
+      <!-- // audio tag -->
+
+      <!-- video tag -->
+      <article>
+        <h3>⭐️ &lt;video&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>&lt;video&gt; 태그(Tag)는 원하는 동영상을 가져와 삽입할 때 사용한다. 여러 속성을 가지고있으며, 속성과 속성값을 같이 사용한다.</p>
+        <table class="table">
+          <tr>
+            <th>속성명</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>src [필수]</th>
+            <td>비디오의 경로를 작성하며, src="비디오 경로" 로 사용한다.</td>
+          </tr>
+          <tr>
+            <th>controls</th>
+            <td>동영상을 컨트롤 할 수 있는 제어창이 같이 생성된다.</td>
+          </tr>
+          <tr>
+            <th>autoplay</th>
+            <td>브라우저를 실행하면 비디오를 자동 실행한다.<br>단, 크롬에서 autoplay는 muted와 함께 사용하여야 적용된다.</td>
+          </tr>
+          <tr>
+            <th>loop</th>
+            <td>비디오 재생이 끝이나면 다시 반복하여 재생하여준다.</td>
+          </tr>
+          <tr>
+            <th>muted</th>
+            <td>브라우저에서 비디오의 소리를 음소거하여 재생한다.</td>
+          </tr>
+          <tr>
+            <th>poster</th>
+            <td>비디오를 재생하기 전, 썸네일을 표시한다. poster="썸네일 경로"</td>
+          </tr>
+          <tr>
+            <th>preload</th>
+            <td>
+              브라우저에게 비디오 파일도 같이 로드 되어야하는지 저자가 생각하는 최적의 사용자 경험은 무엇인지 힌트를 준다.<br>
+              단, autoplay 속성이 지정되어 있으면 preload 속성은 무시된다.<br>
+              <ul class="ullist-ex">
+                <li>auto : [기본값] 문서를 불러올 때, 비디오 파일을 같이 다운로드한다.</li>
+                <li>metadata : 비디오 파일 전체를 다운로드 하지 않고, 메타데이터(metadata)만 불러온다.</li>
+                <li>none : 비디오 파일을 다운로드 하지 않는다. 재생버튼을 눌러줘야 다운로드 시작한다.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>width</th>
+            <td>비디오의 넓이를 지정한다.</td>
+          </tr>
+          <tr>
+            <th>height</th>
+            <td>비디오의 높이를 지정한다.</td>
+          </tr>
+        </table>
+        <div class="linewrap">
+          <span class="line">
+            &lt;video
+            <span class="skyblue">controls</span>
+            <span class="skyblue">autoplay</span>
+            <span class="skyblue">loop</span>
+            <span class="skyblue">muted</span>
+            <span class="skyblue">poster</span> = <span class="orange">"썸네일 경로"</span>
+            <span class="skyblue">preload</span> = <span class="orange">"auto | metadata | none"</span>
+            <span class="skyblue">width</span> = <span class="orange">"이미지 넓이 지정"</span>
+            <span class="skyblue">height</span> = <span class="orange">"이미지 높이 지정"</span>&gt;<br>
+            <div class="secondline">
+              &lt;source <span class="skyblue">src</span> = <span class="orange">"비디오 경로"</span>&gt;
+            </div>
+            &lt;/video&gt;<br><br>
+            &lt;source <span class="skyblue">src</span> = <span class="orange">"비디오 경로"</span>&gt; <span class="white">는 아래와 같이</span> &lt;video&gt; <span class="white">태그의 속성으로 사용이 가능하다.</span><br>
+            &lt;video <span class="skyblue">src</span> = <span class="orange">"비디오 경로"</span>&gt;&lt;video&gt;
+          </span>
+        </div>
+      </article>
+      <!-- // video tag -->
+
+      <!-- iframe tag -->
+      <article>
+        <h3>⭐️ &lt;iframe&gt; 태그<br> <span class="element mgl20 mgt10">Inline Level Element</span></h3>
+        <p>&lt;iframe&gt; 태그(Tag)는 현재 HTML 문서에서 다른 HTML 문서 혹은 다른 사이트를 불러올 때 사용한다. 문서에서 너무 많은 콘텐츠의 양을 취급해야 할 때 주로 사용한다.</p>
+        <table class="table">
+          <tr>
+            <th>속성명</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>src [필수]</th>
+            <td>&lt;iframe&gt;의 경로를 작성하며, src="&lt;iframe&gt; 경로" 로 사용한다.</td>
+          </tr>
+          <tr>
+            <th>width</th>
+            <td>&lt;iframe&gt;의 넓이를 지정한다.</td>
+          </tr>
+          <tr>
+            <th>height</th>
+            <td>&lt;iframe&gt;의 높이를 지정한다.</td>
+          </tr>
+          <tr>
+            <th>name</th>
+            <td>&lt;iframe&gt;의 이름을 지정한다.</td>
+          </tr>
+        </table>
+        <div class="linewrap">
+          <span class="line">
+            &lt;iframe&gt;
+            <span class="skyblue">src</span> = <span class="orange">"&lt;iframe&gt; 경로"</span>
+            <span class="skyblue">width</span> = <span class="orange">"&lt;iframe&gt; 넓이 지정"</span>
+            <span class="skyblue">height</span> = <span class="orange">"&lt;iframe&gt; 높이 지정"</span>
+            &lt;/iframe&gt;<br><br>
+          </span>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12931.520561156034!2d128.58760330187837!3d35.87645404152108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e3d958d91ffd%3A0x836173d4230492e6!2z64yA6rWs7Jet!5e0!3m2!1sko!2skr!4v1648903562709!5m2!1sko!2skr" width="100%" height="400" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </article>
+      <!-- // iframe tag -->
+    </section>
+  </main>
+</body>
+</html>

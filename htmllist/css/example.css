@@ -1,3 +1,18 @@
+/* heading-ex */
+.heading-ex h1 {
+  font-size: 32px;
+}
+.heading-ex h2 {
+  font-size: 24px !important;
+  text-align: left !important;
+  text-shadow: none !important;
+}
+.heading-ex h3 {
+  font-size: 19px !important;
+  margin: 0 !important;
+}
+/* // heading-ex */
+
 /* display-ex */
 .block-ex1 {
   background-color: red;
