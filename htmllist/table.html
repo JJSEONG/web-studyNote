@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML의 표 만들기</title>
+  <!-- style.css 연결 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subpage.css">
+  <link rel="stylesheet" href="./css/liststyle.css">
+  <link rel="stylesheet" href="./css/example.css">
+  <link rel="icon" href="../favicon.png">
+  <!-- fontawesome icon 연결 link -->
+  <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
+  <!-- javascript 연결 -->
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="mainlogo">
+      </a>
+    </h1>
+    <div class="hambtn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navwrap">
+      <ul>
+        <li><a href="../html/index.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mgt120">
+    <section class="container-white list-title">
+      <!-- Main title -->
+      <article>
+        <h2>HTML의 표를 만드는 태그</h2>
+        <h3>⭐️ HTML 문서에 표 만들기</h3>
+        <p>HTML의 표를 생성하는 태그를 알아보려고한다. 표에는 행(row)와 열(column)으로 이루어져 있으며, 이 태그들을 어떻게 사용하는지 확인해보자.</p>
+      </article>
+      <!-- // Main title -->
+
+      <!-- table,tr,td,th tag -->
+      <article>
+        <h3>⭐️ &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt; 태그</h3>
+        <p>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt; 태그(Tag)들이 모여서 표의 기본적인 구성을 갖춘다.</p>
+        <table class="table">
+          <tr>
+            <th>구성 요소</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>&lt;table&gt;</th>
+            <td>데이터 표를 정의한다. </td>
+          </tr>
+          <tr>
+            <th>&lt;tr&gt;</th>
+            <td>테이블(표)의 한 줄(행)을 나타낸다.</td>
+          </tr>
+          <tr>
+            <th>&lt;td&gt;</th>
+            <td>테이블(표)의 한 칸(열, 셀)을 나타낸다.</td>
+          </tr>
+          <tr>
+            <th>&lt;th&gt;</th>
+            <td>테이블(표)의 제목이 되는 칸을 나타낸다.</td>
+          </tr>
+        </table>
+        <div class="linewrap">
+          <span class="line">
+            <div class="orange">HTML</div>
+            &lt;table&gt;
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;td&gt;<span class="white">첫번째줄 첫번째칸</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">첫번째줄 두번째칸</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">첫번째줄 세번째칸</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;td&gt;<span class="white">두번째줄 첫번째칸</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">두번째줄 두번째칸</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">두번째줄 세번째칸</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+            &lt;/table&gt;<br><br>
+            <div class="skyblue">CSS</div>
+            <span class="white">table</span> { <span class="orange">border-collapse</span> : <span class="skyblue">collapse;</span> }<br>
+            <span class="white">td</span> { <span class="orange">border</span> : <span class="skyblue">1px solid white</span> }
+          </span>
+          <div class="white">
+            <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+            <table class="table-ex">
+              <tr>
+                  <td>첫째줄 첫째칸</td>
+                  <td>첫째줄 둘째칸</td>
+                  <td>첫째줄 셋째칸</td>
+              </tr>
+              <tr>
+                  <td>둘째줄 첫째칸</td>
+                  <td>둘째줄 둘째칸</td>
+                  <td>둘째줄 셋째칸</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </article>
+      <!-- // table,tr,td,th tag -->
+
+      <!-- caption,figcaption tag -->
+      <article>
+        <h3>⭐️ &lt;caption&gt;, &lt;figcaption&gt; 태그</h3>
+        <p>&lt;caption&gt; 태그(Tag)는 표의 제목을 붙일 때 사용한다. &lt;table&gt; 태그 바로 아래에 사용되어야하며, 하나의 &lt;table&gt;에 하나의 &lt;caption&gt; 혹은 &lt;figcaption&gt; 만 사용이 가능하다.</p>
+        <table class="table">
+          <tr>
+            <th>태그명</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>&lt;caption&gt;</th>
+            <td>표의 제목으로 사용되며, 제목이 상단 중앙에 표시된다.</td>
+          </tr>
+          <tr>
+            <th>&lt;figcaption&gt;</th>
+            <td>표의 제목으로 사용되며, 제목이 상단 왼쪽에 표시된다.</td>
+          </tr>
+        </table>
+        <div class="linewrap">
+          <span class="line">
+            <div class="orange">HTML</div>
+            &lt;table&gt;<br>
+            <div class="secondline">&lt;caption&gt;<span class="white">표의 구성요소</span>&lt;/caption&gt;<br>&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;td&gt;<span class="white">첫번째줄 첫번째칸</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">첫번째줄 두번째칸</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">첫번째줄 세번째칸</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;td&gt;<span class="white">두번째줄 첫번째칸</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">두번째줄 두번째칸</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">두번째줄 세번째칸</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+            &lt;/table&gt;<br><br>
+            <div class="skyblue">CSS</div>
+            <span class="white">table</span> { <span class="orange">border-collapse</span> : <span class="skyblue">collapse;</span> }<br>
+            <span class="white">td</span> { <span class="orange">border</span> : <span class="skyblue">1px solid white</span> }
+          </span>
+          <div class="white">
+            <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+            <table class="table-ex">
+              <caption>표의 구성요소</caption>
+              <tr>
+                  <td>첫째줄 첫째칸</td>
+                  <td>첫째줄 둘째칸</td>
+                  <td>첫째줄 셋째칸</td>
+              </tr>
+              <tr>
+                  <td>둘째줄 첫째칸</td>
+                  <td>둘째줄 둘째칸</td>
+                  <td>둘째줄 셋째칸</td>
+              </tr>
+            </table>
+          </div>
+      </article>
+      <!-- // caption,figcaption tag -->
+
+      <!-- 병합속성 -->
+      <article>
+        <h3>⭐️ colspan, rowspan 속성</h3>
+        <p>이 두개의 속성은 표의 행이나 열을 합치는 속성이다 [병합]. 셀을 합치는 속성으로 셀을 만드는 &lt;td&gt; 태그 혹은 &lt;th&gt; 태그에서 사용한다.</p>
+        <table class="table">
+          <tr>
+            <th>속성명</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>colspan</th>
+            <td>열을 병합하며, 지정한 숫자만큼 병합한다. colspan="합쳐지는 열의 개수"</td>
+          </tr>
+          <tr>
+            <th>rowspan</th>
+            <td>행을 병합하며, 지정한 숫자만큼 병합한다. colspan="합쳐지는 행의 개수"</td>
+          </tr>
+        </table>
+        <div class="linewrap">
+          <span class="line">
+            <div class="orange">HTML</div>
+            &lt;table&gt;
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;td <span class="skyblue">colspan</span>=<span class="orange">"2"</span>&gt;<span class="white">01</span>&lt;/td&gt;<br>
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;td <span class="skyblue">rowspan</span>=<span class="orange">"2"</span>&gt;<span class="white">03</span>&lt;/td&gt;<br>
+              &lt;td&gt;<span class="white">04</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;td&gt;<span class="white">06</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+            &lt;/table&gt;<br><br>
+            <div class="skyblue">CSS</div>
+            <span class="white">table</span> { <span class="orange">border-collapse</span> : <span class="skyblue">collapse;</span> }<br>
+            <span class="white">td</span> { <span class="orange">border</span> : <span class="skyblue">1px solid white</span> }
+          </span>
+          <div class="white">
+            <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+            <table class="table-ex2">
+              <tr>
+                <td colspan="2">01</td>
+            </tr>
+            <tr>
+                <td rowspan="2">03</td>
+                <td>04</td>
+            </tr>
+            <tr>
+                <td>06</td>
+            </tr>
+            </table>
+          </div>
+      </article>
+      <!-- // 병합속성 -->
+
+      <!-- thead,tbody,tfoot tag -->
+      <article>
+        <h3>⭐️ &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; 태그</h3>
+        <p>위의 태그(Tag)들은 테이블의 내용을 그룹화하여 코드를 읽을 때 명확히 구별해주는 역할을 하며, 화면을 볼 수 없는 분들이 사용하는 스크린 리더를 통해 표의 구조를 쉽게 이해할 수 있다. 즉, 웹접근성이 향상된다.</p>
+        <table class="table">
+          <tr>
+            <th>속성명</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>&lt;thead&gt;</th>
+            <td>표의 머리글(제목)을 지정한다. 테이블 태그 당 한번만 사용가능하다.</td>
+          </tr>
+          <tr>
+            <th>&lt;tbody&gt;</th>
+            <td>표의 본문을 지정한다.</td>
+          </tr>
+          <tr>
+            <th>&lt;tfoot&gt;</th>
+            <td>표의 바닥글(요약)을 지정한다. 테이블 태그 당 한번만 사용가능하다.</td>
+          </tr>
+        </table>
+        <div class="linewrap">
+          <span class="line">
+            <div class="orange">HTML</div>
+            &lt;table&gt;
+            <div class="secondline">&lt;thead&gt;<br>&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;th&gt;<span class="white">thead 01</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">thead 02</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">thead 03</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;<br>&lt;/thead&gt;</div>
+
+            <div class="secondline">&lt;tbody&gt;<br>&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;th&gt;<span class="white">tbody 01</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">tbody 02</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">tbody 03</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;<br>&lt;/tbody&gt;</div>
+
+            <div class="secondline">&lt;tfoot&gt;<br>&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;th&gt;<span class="white">tfoot 01</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">tfoot 02</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">tfoot 03</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;<br>&lt;/tfoot&gt;</div>
+
+            &lt;/table&gt;<br><br>
+            <div class="skyblue">CSS</div>
+            <span class="white">table</span> { <span class="orange">border-collapse</span> : <span class="skyblue">collapse;</span> }<br>
+            <span class="white">th,td</span> { <span class="orange">border</span> : <span class="skyblue">1px solid white</span> }
+          </span>
+          <div class="white">
+            <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+            <table class="table-ex">
+              <thead>
+                <tr>
+                    <th>thead 01</th>
+                    <th>thead 02</th>
+                    <th>thead 03</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>tbody 01</td>
+                    <td>tbody 02</td>
+                    <td>tbody 03</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                    <td>tfoot 01</td>
+                    <td>tfoot 02</td>
+                    <td>tfoot 03</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+      </article>
+      <!-- // thead,tbody,tfoot tag -->
+
+      <!-- colgroup, col tag -->
+      <article>
+        <h3>⭐️ &lt;colgroup&gt;, &lt;col&gt; 태그</h3>
+        <p>한 열에 있는 모든 셀에 같은 스타일을 적용하고자 할 때 사용한다. &lt;col&gt; 태그는 닫는 태그가 없기 때문에 &lt;col&gt; 태그로 둘 이상의 열을 묶어 같은 스타일을 저장하려면 span 속성을 이용해 &lt;col span="2"&gt; 형식으로 설정한다. &lt;colgroup&gt; 태그를 사용해 여러 열을 묶어 스타일을 적용하려면 &lt;colgroup&gt; 태그 안에 묶고 싶은 열의 &lt;col&gt; 태그를 작성하면 된다.</p>
+        <div class="linewrap">
+          <span class="line">
+            <div class="orange">HTML</div>
+            &lt;table&gt;
+            <div class="secondline">&lt;colgroup&gt;</div>
+            <div class="thirdline">&lt;col <span class="skyblue">span</span> = <span class="orange">"2"</span> <span class="skyblue">style</span> = <span class="orange">"background-color : red"</span> &gt;</div>
+            <div class="secondline">&lt;/colgroup&gt;</div>
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;th&gt;<span class="white">01-01</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">01-02</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">01-03</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;th&gt;<span class="white">02-01</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">02-02</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">02-03</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+
+            <div class="secondline">&lt;tr&gt;</div>
+            <div class="thirdline">
+              &lt;th&gt;<span class="white">03-01</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">03-02</span>&lt;/td&gt;<br>
+              &lt;th&gt;<span class="white">03-03</span>&lt;/td&gt;
+            </div>
+            <div class="secondline">&lt;/tr&gt;</div>
+
+            &lt;/table&gt;<br><br>
+            <div class="skyblue">CSS</div>
+            <span class="white">table</span> { <span class="orange">border-collapse</span> : <span class="skyblue">collapse;</span> }<br>
+            <span class="white">th,td</span> { <span class="orange">border</span> : <span class="skyblue">1px solid white</span> }
+          </span>
+          <div class="white">
+            <p>위와 같이 작성하면 아래와 같은 결과를 가지게된다.</p>
+            <table class="table-ex">
+              <colgroup>
+                <col span = "2" style = "background-color : red" >
+              </colgroup>
+              <tr>
+                <td>01-01</td>
+                <td>01-02</td>
+                <td>01-03</td>
+              </tr>
+              <tr>
+                <th>02-01</th>
+                <th>02-02</th>
+                <th>02-03</th>
+              </tr>
+              <tr>
+                <th>03-01</th>
+                <th>03-02</th>
+                <th>03-03</th>
+              </tr>
+            </table>
+          </div>
+      </article>
+      <!-- // colgroup, col tag -->
+    </section>
+  </main>
+</body>
+</html>

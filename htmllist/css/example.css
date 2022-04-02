@@ -134,3 +134,19 @@ dd {
   color: #551A8B;
 }
 /* // anchor example */
+
+/* table example */
+.table-ex {
+  border-collapse: collapse;
+}
+.table-ex td, .table-ex th {
+  border: 1px solid white;
+}
+.table-ex2 {
+  border-collapse: collapse;
+}
+.table-ex2 td {
+  width: 100px;
+  border: 1px solid white;
+}
+/* // table example */
