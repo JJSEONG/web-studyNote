@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML의 입력양식</title>
+  <!-- style.css 연결 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subpage.css">
+  <link rel="stylesheet" href="./css/liststyle.css">
+  <link rel="stylesheet" href="./css/example.css">
+  <link rel="icon" href="../favicon.png">
+  <!-- fontawesome icon 연결 link -->
+  <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
+  <!-- javascript 연결 -->
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="mainlogo">
+      </a>
+    </h1>
+    <div class="hambtn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navwrap">
+      <ul>
+        <li><a href="../html/index.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mgt120">
+    <section class="container-white list-title">
+      <!-- Main title -->
+      <article>
+        <h2>HTML의 form 요소(Element)</h2>
+        <h3>⭐️ HTML 양식 만들기</h3>
+        <p>HTML 문서 내에서 어떠한 내용값을 받아서 웹 서버로 보내주는 양식을 만들어주는 요소들이다. 이 요소들을 가지고 입력 받는 양식을 어떻게 만들어나가는지 알아보고, 각 요소들의 속성에 대한 내용도 알아보자.</p>
+      </article>
+      <!-- // Main title -->
+
+      <!-- form tag -->
+      <article>
+        <h3>⭐️ &lt;form&gt; 태그<br> <span class="element mgl20 mgt10">Block Level Element</span></h3>
+        <p>&lt;form&gt; 태그(Tag)는 입력받은 내용들을 웹 서버로 보내주는 내용들의 범위를 설정한다. form 태그 안에 또 다른 form 태그는 작성할 수 없다. form 태그와 함께 사용하는 속성들을 알아보자.</p>
+
+        <div class="linewrap">
+          <span class="line">
+            &lt;form <span class="skyblue">속성</span> = <span class="orange">"속성값"</span>&gt; <span class="white">form 태그를 구성하는 여러 요소들</span> &lt;/form&gt;
+          </span>
+        </div>
+
+        <table class="table">
+          <tr>
+            <th>속성</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>autocomplete</th>
+            <td>
+              사용자가 사용하던 내용을 기억하여, 자동으로 문구가 완성되는 기능<br>
+              속성값으로는 on / off 가 있으며, 기본값은 on 이다.
+            </td>
+          </tr>
+          <tr>
+            <th>action = "url"</th>
+            <td>입력받은 데이터를 처리할 프로그램의 url 지정한다.</td>
+          </tr>
+          <tr>
+            <th>name="이름지정"</th>
+            <td>하나의 문서에 여러개의 폼요소가 있을 경우, 폼요소를 식별할 수 있는 이름 지정한다.</td>
+          </tr>
+          <tr>
+            <th>target</th>
+            <td>
+              서버로 전송 한 뒤, 브라우저의 응답받을 곳을 지정한다.<br>
+              속성값으로는 _self, _blank 가 존재한다.
+            </td>
+          </tr>
+          <tr>
+            <th>method</th>
+            <td>
+              입력한 정보를 서버에 전달하는 역할이다.<br>
+              속성값으로는 GET / POST 가 존재한다.
+              <ul class="ullist-ex">
+                <li>GET : 검색창과 같은 간단한 정보 전달</li>
+                <li>POST : 보안유지가 좋아 비밀번호와 같은 중요한 데이터 전송할 때 사용</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </article>
+      <!-- // form tag -->
+
+      <!-- input tag -->
+      <article>
+        <h3>⭐️ &lt;input /&gt; 태그<br> <span class="element mgl20 mgt10">Inline-Block Level Element</span></h3>
+        <p>&lt;input&gt; 태그(Tag)는 빈 태그(Empty Tag)로 브라우저 내에서 사용자에게 어떠한 입력을 받고, 서버로 받아 들이기 위해 사용하는 태그이다. 주로 설문조사나 성별 등을 입력받거나, 검색할 수 있는 칸을 생성할때 사용한다.</p>
+
+        <div class="linewrap">
+          <span class="line">
+            &lt;input <span class="skyblue">type</span> = <span class="orange">"type의 값"</span> <span class="skyblue">속성</span> = <span class="orange">"속성값"</span> /&gt;
+          </span>
+        </div>
+
+        <table class="table">
+          <tr>
+            <th>속성</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>autocomplete</th>
+            <td>
+              사용자가 사용하던 내용을 기억하여, 자동으로 문구가 완성되는 기능<br>
+              속성값으로는 on / off 가 있으며, 기본값은 on 이다.
+            </td>
+          </tr>
+          <tr>
+            <th>disabled</th>
+            <td>입력받을 양식을 비활성화하여 사용자가 작성을 불가능하게 만들어준다.</td>
+          </tr>
+          <tr>
+            <th>checked</th>
+            <td>type="radio / checkbox" 일 때, 미리 체크가 표시 된 상태로 브라우저에 표시된다.</td>
+          </tr>
+          <tr>
+            <th>maxlength="숫자"</th>
+            <td>작성할 수 있는 최대 글자의 수를 제한한다.</td>
+          </tr>
+          <tr>
+            <th>name="이름지정"</th>
+            <td>양식의 이름을 지정하며, 같은 주제의 내용을 동일 이름으로 지정하여 사용한다.</td>
+          </tr>
+          <tr>
+            <th>placeholder="힌트작성"</th>
+            <td>입력양식에 무엇을 작성해야 하는지, 힌트를 알려줄 수 있는 역할을 한다.</td>
+          </tr>
+          <tr>
+            <th>readonly</th>
+            <td>읽기전용으로, 사용자가 수정이 불가능하게 만들어준다.</td>
+          </tr>
+          <tr>
+            <th>type="타입의 종류"</th>
+            <td>해당 입력양식에 받아 올 데이터의 종류를 얘기한다. type의 종류를 알맞게 사용하여야한다.</td>
+          </tr>
+          <tr>
+            <th>value="초기 설정값"</th>
+            <td>브라우저에서 입력양식을 보았을 때 미리 작성되어있는 값을 얘기한다.</td>
+          </tr>
+          <tr>
+            <th>step="숫자"</th>
+            <td>number, range 속성 일 경우 step 속성을 사용하여 증감 폭을 설정해준다.</td>
+          </tr>
+        </table>
+      </article>
+      <!-- // input tag -->
+
+      <!-- type의 종류 -->
+      <article>
+        <h3>⭐️ &lt;input /&gt; 태그안의 type 속성의 종류</h3>
+        <p>&lt;input&gt; 태그(Tag)의 속성인 type 에는 여러 데이터 종류가 있다. 이 데이터들을 알맞는 용도로 적재적소에 사용 할 줄 알아야한다.</p>
+
+        <div class="linewrap">
+          <span class="line">
+            &lt;input <span class="skyblue">type</span> = <span class="orange">"type의 값"</span> /&gt;
+          </span>
+        </div>
+
+        <table class="table">
+          <tr>
+            <th>데이터의 종류</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>text</th>
+            <td>일반적인 텍스트를 입력하는 양식을 만들어준다.</td>
+          </tr>
+          <tr>
+            <th>password</th>
+            <td>비밀번호를 입혁할 수 있는 양식을 만들어준다.</td>
+          </tr>
+          <tr>
+            <th>radio</th>
+            <td>라디오 버튼으로 생성되어 단일 선택을 하기 위해 사용되며, &lt;input&gt;태그의 name 속성을 이용하여 그룹화하여 사용한다.</td>
+          </tr>
+          <tr>
+            <th>checkbox</th>
+            <td>체크박스 버튼으로 생성되어 다중 선택을 하기 위해 사용되며, &lt;input&gt;태그의 name 속성을 이용하여 그룹화하여 사용한다.</td>
+          </tr>
+          <tr>
+            <th>file</th>
+            <td>파일을 업로드 할 수 있는 버튼을 생성된다.</td>
+          </tr>
+          <tr>
+            <th>button</th>
+            <td>일반적인 버튼으로 생성되며, &lt;button&gt; 태그와 동일한 역할을 한다.</td>
+          </tr>
+          <tr>
+            <th>submit</th>
+            <td>전송(제출)버튼으로 생성되며, 입력한 내용을 전송(제출)을 위해 사용한다.</td>
+          </tr>
+          <tr>
+            <th>reset</th>
+            <td>초기화 버튼으로 생성되며, 작성한 내용이 초기화되어 작성한 내용을 모두 지우고 재입력을 할 수 있다.</td>
+          </tr>
+          <tr>
+            <th>search</th>
+            <td>검색을 할 수 있는 텍스트 입력창을 생성한다.</td>
+          </tr>
+          <tr>
+            <th>tel</th>
+            <td>전화번호를 입력 할 수 있는 창이며, 모바일에서 클릭 시, 숫자패드가 우선으로 표현된다.</td>
+          </tr>
+          <tr>
+            <th>url</th>
+            <td>url을 입력 할 수 있는 텍스트 입력창을 생성한다.</td>
+          </tr>
+          <tr>
+            <th>email</th>
+            <td>이메일을 작성 할 수 있는 텍스트 입력창을 생성한다.</td>
+          </tr>
+          <tr>
+            <th>datetime-local</th>
+            <td>날짜와 시간을 선택할 수 있는 입력창을 생성한다.</td>
+          </tr>
+          <tr>
+            <th>date</th>
+            <td>날짜를 선택할 수 있는 입력창을 생성한다.</td>
+          </tr>
+          <tr>
+            <th>month</th>
+            <td>년,월을 선택할 수 있는 입력창을 생성한다.</td>
+          </tr>
+          <tr>
+            <th>week</th>
+            <td>해당 년도의 몇번째 주인지 선택할 수 있는 입력창을 생성한다.</td>
+          </tr>
+          <tr>
+            <th>time</th>
+            <td>시간을 지정할 수 있는 입력창을 생성한다.</td>
+          </tr>
+          <tr>
+            <th>range</th>
+            <td>범위를 설정할 수 있는 슬라이드 막대가 생성된다.</td>
+          </tr>
+          <tr>
+            <th>number</th>
+            <td>숫자를 입력할 수 있는 입력창을 생성한다. &lt;input&gt;의 속성 step 을 사용하여, 증감 폭을 정할 수 있다.</td>
+          </tr>
+          <tr>
+            <th>color</th>
+            <td>색상을 지정 할 수 있는 선택창을 생성한다.</td>
+          </tr>
+        </table>
+      </article>
+      <!-- // type의 종류 -->
+
+      <!-- button tag -->
+      <article>
+        <h3>⭐️ &lt;button&gt; 태그<br> <span class="element mgl20 mgt10">Inline-Block Level Element</span></h3>
+        <p>&lt;button&gt; 태그(Tag)는 &lt;input&gt; 태그의 type="button"의 값과 같은 의미를 가진다. type 속성의 값으로는 button[기본값], submit, reset 이 있다.</p>
+
+        <div class="linewrap">
+          <span class="line">
+            &lt;button <span class="skyblue">type</span> = <span class="orange">"button[기본값] / submit / reset"</span>&gt;&lt;button&gt;
+          </span>
+        </div>
+
+        <table class="table">
+          <tr>
+            <th>속성</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>disabled</th>
+            <td>입력받을 양식을 비활성화하여 사용자가 작성을 불가능하게 만들어준다.</td>
+          </tr>
+          <tr>
+            <th>name="이름지정"</th>
+            <td>데이터와 함께 전송되는 버튼의 이름을 얘기한다.</td>
+          </tr>
+          <tr>
+            <th>type="타입의 종류"</th>
+            <td>button[기본값] / submit / reset 이 있으며, 선택하여 사용한다.</td>
+          </tr>
+        </table>
+      </article>
+      <!-- // button tag -->
+
+      <!-- textarea tag -->
+      <article>
+        <h3>⭐️ &lt;textarea&gt; 태그<br> <span class="element mgl20 mgt10">Inline-Block Level Element</span></h3>
+        <p>&lt;textarea&gt; 태그(Tag)는 여러 줄을 입력 할 수 있는 입력창을 생성한다. 이용약관 등을 나타낼 때 주로 사용한다.</p>
+
+        <div class="linewrap">
+          <span class="line">
+            &lt;textarea <span class="skyblue">속성</span> = <span class="orange">"속성값"</span>&gt;&lt;textarea&gt;
+          </span>
+        </div>
+
+        <table class="table">
+          <tr>
+            <th>속성</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>autocomplete</th>
+            <td>
+              사용자가 사용하던 내용을 기억하여, 자동으로 문구가 완성되는 기능<br>
+              속성값으로는 on / off 가 있으며, 기본값은 on 이다.
+            </td>
+          </tr>
+          <tr>
+            <th>disabled</th>
+            <td>입력받을 양식을 비활성화하여 사용자가 작성을 불가능하게 만들어준다.</td>
+          </tr>
+          <tr>
+            <th>maxlength="숫자"</th>
+            <td>작성할 수 있는 최대 글자의 수를 제한한다.</td>
+          </tr>
+          <tr>
+            <th>name="이름지정"</th>
+            <td>양식의 이름을 지정한다.</td>
+          </tr>
+          <tr>
+            <th>placeholder="힌트작성"</th>
+            <td>입력양식에 무엇을 작성해야 하는지, 힌트를 알려줄 수 있는 역할을 한다.</td>
+          </tr>
+          <tr>
+            <th>readonly</th>
+            <td>읽기전용으로, 사용자가 수정이 불가능하게 만들어준다.</td>
+          </tr>
+          <tr>
+            <th>rows="영역의 줄 수"</th>
+            <td>표현해 줄 수 있는 줄 수를 설정해주며, 줄 수를 넘어가면 스크롤이 생성된다.</td>
+          </tr>
+          <tr>
+            <th>cols="영역의 너비"</th>
+            <td>표현해 줄 수 있는 너비를 설정해준다.</td>
+          </tr>
+        </table>
+      </article>
+      <!-- // textarea tag -->
+
+      <!-- select tag -->
+      <article>
+        <h3>⭐️ &lt;select&gt; 태그<br> <span class="element mgl20 mgt10">Inline-Block Level Element</span></h3>
+        <p>&lt;select&gt; 태그(Tag)는 드롭다운 목록을 생성하며, &lt;option&gt; 태그를 자식으로 두어, 선택을 할 수 있는 선택창을 생성한다.</p>
+
+        <div class="linewrap">
+          <span class="line">
+            &lt;select <span class="skyblue">속성</span> = <span class="orange">"속성값"</span>&gt;<br>
+            <span class="secondline">&lt;option&gt; <span class="white">옵션 1</span> &lt;/option&gt;</span><br>
+            <span class="secondline">&lt;option&gt; <span class="white">옵션 2</span> &lt;/option&gt;</span><br>
+            <span class="secondline">&lt;option&gt; <span class="white">옵션 3</span> &lt;/option&gt;</span><br>
+            &lt;/select&gt;
+          </span>
+        </div>
+
+        <table class="table">
+          <tr>
+            <th>속성</th>
+            <th>의미</th>
+          </tr>
+          <tr>
+            <th>autocomplete</th>
+            <td>
+              사용자가 사용하던 내용을 기억하여, 자동으로 문구가 완성되는 기능<br>
+              속성값으로는 on / off 가 있으며, 기본값은 on 이다.
+            </td>
+          </tr>
+          <tr>
+            <th>disabled</th>
+            <td>입력받을 양식을 비활성화하여 사용자가 작성을 불가능하게 만들어준다.</td>
+          </tr>
+          <tr>
+            <th>multiple</th>
+            <td>두개 이상의 항목을 선택할 수 있게 해준다.</td>
+          </tr>
+          <tr>
+            <th>name="이름지정"</th>
+            <td>양식의 이름을 지정한다.</td>
+          </tr>
+          <tr>
+            <th>size="숫자"</th>
+            <td>한번에 볼 수 있는 옵션의 갯수를 설정한다.</td>
+          </tr>
+        </table>
+      </article>
+      <!-- // select tag -->
+    </section>
+  </main>
+</body>
+</html>
