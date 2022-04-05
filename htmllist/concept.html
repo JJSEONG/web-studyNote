@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/subpage.css">
   <link rel="stylesheet" href="./css/liststyle.css">
+  <link rel="stylesheet" href="./css/example.css">
   <link rel="icon" href="../favicon.png">
   <!-- fontawesome icon 연결 link -->
   <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
@@ -76,6 +77,33 @@
       <p>위의 내용과 같이 HTML의 기본적인 구조는 <span class="accent">&lt;여는태그&gt;내용&lt;닫는태그&gt;</span>로 구성이 되어진다.</p>
     </section>
     <!-- // html의 구조 -->
+
+    <!-- 부모-자식의 구조 -->
+    <section class="container-white list-title">
+      <h3>⭐️ HTML의 부모-자식 구조</h3>
+      <p>HTML의  구조는 부모-자식 간의 구조로 이루어진다. 부모-자식 간의 구조를 잘 이해하여야, 추후에 CSS에서 스타일을 줄 때 어느 특정 요소에 스타일을 주기가 쉽다. 부모와 자식은 상대적으로 이루어지며, 부모요소 아래의 자식요소가 또 다른 자식요소를 가질 수 있다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;section&gt;
+          <div class="secondline">&lt;h1&gt; <span class="white">색의종류</span> &lt;/h1&gt;</div>
+          <div class="secondline">&lt;ul&gt;</div>
+          <div class="thirdline">&lt;li&gt; <span class="white">RED</span> &lt;/li&gt;</div>
+          <div class="thirdline">&lt;li&gt; <span class="white">GREEN</span> &lt;/li&gt;</div>
+          <div class="thirdline">&lt;li&gt; <span class="white">BLUE</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;/ul&gt;</div>
+          &lt;/section&gt;
+          <div class="white">
+            <p>위의 예시에서 부모-자식 요소를 알아보자.</p>
+            <p><span class="skyblue">&lt;section&gt; 태그</span> : <span class="orange">&lt;h1&gt;</span> 태그와 <span class="orange">&lt;ul&gt;</span> 태그의 부모</p>
+            <p><span class="skyblue">&lt;h1&gt; 태그</span> : <span class="orange">&lt;section&gt;</span> 태그의 자식</p>
+            <p><span class="skyblue">&lt;ul&gt; 태그</span> : <span class="orange">&lt;section&gt;</span> 태그의 자식이자 <span class="orange">&lt;li&gt;</span> 태그의 부모</p>
+            <p><span class="skyblue">&lt;li&gt; 태그</span> : <span class="orange">&lt;ul&gt;</span> 태그의 자식</p>
+          </div>
+        </span>
+      </div>
+      <p>위의 내용과 같이 HTML의 부모-자식 구조는 <span class="accent">태그간 상대적으로</span> 이루어진다.</p>
+    </section>
+    <!-- // 부모-자식의 구조 -->
   </main>
 </body>
 </html>
