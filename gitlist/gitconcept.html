@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git의 정의와 용어</title>
+  <!-- style.css 연결 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subpage.css">
+  <link rel="stylesheet" href="../htmllist/css/liststyle.css">
+  <link rel="stylesheet" href="../htmllist/css/example.css">
+  <link rel="icon" href="../favicon.png">
+  <!-- fontawesome icon 연결 link -->
+  <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
+  <!-- javascript 연결 -->
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="mainlogo">
+      </a>
+    </h1>
+    <div class="hambtn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navwrap">
+      <ul>
+        <li><a href="../web/web.html">웹 표준 & 웹 접근성</a></li>
+        <li><a href="../git/index.html">Git & Github</a></li>
+        <li><a href="../html/index.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mgt120">
+    <!-- Git title -->
+    <section class="container-white list-title">
+      <h2>Git의 정의와 용어</h2>
+      <h3>⭐️ Git 이란?</h3>
+      <p>
+        Git은 2005년 리누스 토르발즈가 만든 분산 버전 관리 시스템(Distributed Version Control (Systems)) (DVCS)이다.<br>
+        Git은 컴퓨터 파일의 변경사항을 추적하고, 여러 사용자들 간에 해당 파일 작업을 조율하기 위해 사용되며, 실제로도 현재 많은 회사나 협업을 진행할 때 많이 사용된다. 이러한 이점으로 다른 작업자들이 작업하여 변경된 내용을 쉽게 캐치할 수 있으며, 직접 불러와 수정도 가능하다. 한글,엑셀 등을 사용할 때 따로 버전(수정본)을 저장해 두는 것처럼 Git을 이용해 버전(수정본)을 저장해 둘 수 있으며, 작업이 꼬였을 때나, 다시 돌아가야 할 때 저장해놓은 버전(수정본)을 불러 돌아가기도 가능하다. 이러한 Git을 알아두고 유용하게 사용하면 작업환경이 더욱 쾌적해지고, 추후 다른 사람들과의 협업시에도 매끄러운 진행을 할 수 있으니 알아두는걸 추천한다.
+      </p>
+    </section>
+    <!-- // Git title -->
+
+    <!-- Git의 기본용어 -->
+    <section class="container-white list-title">
+      <h3>⭐️ Git의 용어정리</h3>
+      <p>Git을 사용하기 위한 기본적인 용어들을 알아보자.</p>
+      <table class="table">
+        <tr>
+          <th>Repository [저장소]</th>
+          <td>
+            <h4>Git으로 관리하는 프로젝트가 들어있는 저장공간. [repo]라고도 불린다.</h4>
+            <ul class="ullist-ex">
+              <li>
+                <p>Local Repository [로컬저장소] : 작업자의 개발환경(PC)에 저장되는 폴더 등 개인 저장 공간</p>
+              </li>
+              <li>
+                <p>Remote Repository [원격저장소] : 원격저장소(Github 등)에 저장되는 외부 저장 공간</p>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Commit [커밋]</th>
+          <td>
+            <h4>파일이나 폴더의 추가/변경된 상태를 저장소에 저장하는 것이다. [버전(Version) 저장]</h4>
+          </td>
+        </tr>
+        <tr>
+          <th>Push [푸쉬]</th>
+          <td>
+            <h4>Commit 한 내용을 원격 저장소에 올리는 것을 얘기한다.</h4>
+          </td>
+        </tr>
+        <tr>
+          <th>Branch [브랜치]</th>
+          <td>
+            <h4>가지라는 뜻으로, 독립적인 작업공간을 뜻한다.<br>
+            보통 현재 작업하는 저장소(Master Branch)에서 새로운 Branch를 생성해 새로운 저장공간을 만든 후 작업한다.</h4>
+          </td>
+        </tr>
+        <tr>
+          <th>Merge [머지]</th>
+          <td>
+            <h4>병합/합치기 라는 뜻으로 보통 새로운 Branch와 Master Branch를 병합하기 위해 주로 사용한다.<br></h4>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <!-- // Git의 기본용어 -->
+  </main>
+</body>
+</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 /* heading-ex */
 .heading-ex h1 {
   font-size: 32px;
@@ -120,8 +122,12 @@ dd {
 /* // dl,dt,dd example */
 
 /* bold-example */
-.bold-ex p{
+.bold-ex p, .bold-ex b, .bold-ex strong{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.bold-ex p {
   font-weight: 300;
+  margin: 0 !important;
 }
 /* bold-example */
 
