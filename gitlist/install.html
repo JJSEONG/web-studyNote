@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Git 설치 & Github 연결</title>
+  <title>Git 설치 & 설정</title>
   <!-- style.css 연결 -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/subpage.css">
@@ -40,64 +40,61 @@
     </nav>
   </header>
   <main class="mgt120">
-    <!-- Git title -->
+    <!-- Git install -->
     <section class="container-white list-title">
-      <h2>Git의 설치와 Github 연결하기</h2>
+      <h2>Git의 설치와 설정하기</h2>
       <h3>⭐️ Git 설치</h3>
-      <p>
-        Git은 2005년 리누스 토르발즈가 만든 분산 버전 관리 시스템(Distributed Version Control (Systems)) (DVCS)이다.<br>
-        Git은 컴퓨터 파일의 변경사항을 추적하고, 여러 사용자들 간에 해당 파일 작업을 조율하기 위해 사용되며, 실제로도 현재 많은 회사나 협업을 진행할 때 많이 사용된다. 이러한 이점으로 다른 작업자들이 작업하여 변경된 내용을 쉽게 캐치할 수 있으며, 직접 불러와 수정도 가능하다. 한글,엑셀 등을 사용할 때 따로 버전(수정본)을 저장해 두는 것처럼 Git을 이용해 버전(수정본)을 저장해 둘 수 있으며, 작업이 꼬였을 때나, 다시 돌아가야 할 때 저장해놓은 버전(수정본)을 불러 돌아가기도 가능하다. 이러한 Git을 알아두고 유용하게 사용하면 작업환경이 더욱 쾌적해지고, 추후 다른 사람들과의 협업시에도 매끄러운 진행을 할 수 있으니 알아두는걸 추천한다.
-      </p>
+      <p>Git은 Window 운영체제와 Mac 운영체제가 서로 설치하는 방법이 다르다. 설치하는 방법을 알아보고, 설치를 진행해보자.</p>
     </section>
-    <!-- // Git title -->
+    <!-- // Git install -->
 
-    <!-- Git의 기본용어 -->
+    <!-- git window os install -->
     <section class="container-white list-title">
-      <h3>⭐️ Git의 용어정리</h3>
-      <p>Git을 사용하기 위한 기본적인 용어들을 알아보자.</p>
-      <table class="table">
-        <tr>
-          <th>Repository [저장소]</th>
-          <td>
-            <h4>Git으로 관리하는 프로젝트가 들어있는 저장공간. [repo]라고도 불린다.</h4>
-            <ul class="ullist-ex">
-              <li>
-                <p>Local Repository [로컬저장소] : 작업자의 개발환경(PC)에 저장되는 폴더 등 개인 저장 공간</p>
-              </li>
-              <li>
-                <p>Remote Repository [원격저장소] : 원격저장소(Github 등)에 저장되는 외부 저장 공간</p>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th>Commit [커밋]</th>
-          <td>
-            <h4>파일이나 폴더의 추가/변경된 상태를 저장소에 저장하는 것이다. [버전(Version) 저장]</h4>
-          </td>
-        </tr>
-        <tr>
-          <th>Push [푸쉬]</th>
-          <td>
-            <h4>Commit 한 내용을 원격 저장소에 올리는 것을 얘기한다.</h4>
-          </td>
-        </tr>
-        <tr>
-          <th>Branch [브랜치]</th>
-          <td>
-            <h4>가지라는 뜻으로, 독립적인 작업공간을 뜻한다.<br>
-            보통 현재 작업하는 저장소(Master Branch)에서 새로운 Branch를 생성해 새로운 저장공간을 만든 후 작업한다.</h4>
-          </td>
-        </tr>
-        <tr>
-          <th>Merge [머지]</th>
-          <td>
-            <h4>병합/합치기 라는 뜻으로 보통 새로운 Branch와 Master Branch를 병합하기 위해 주로 사용한다.<br></h4>
-          </td>
-        </tr>
-      </table>
+      <h3>⭐️ Window 운영체제 Git 설치</h3>
+      <p>Git을 설치하기위해 <a href="https://git-scm.com/" class="homepage">https://git-scm.com/</a>으로 접속하여 Download를 클릭하여 설치를 진행해 주면 된다. 현재 작성자는 Mac 운영체제를 사용하고 있어서 Mac용으로 출력되지만, Window 운영체제를 사용하시는 분들은 Window용으로 출력된다.</p>
+      <div class="gitex-wrap"><img src="../img/gitex/git-ex1.png" alt="git install example"></div>
+      <p>추후에 약관을 읽어보고 Next를 누르다 Install 창이 뜨면 Install 을 클릭하여 설치를 진행한다. 보통은 따로 변경해 줄 필요가 없기 때문에, Next만 쭉 누르고 설치를 진행해도 무관하다.</p>
+      <div class="gitex-wrap">
+        <img src="../img/gitex/git-ex2.png" alt="git install start">
+        <img src="../img/gitex/git-ex3.png" alt="git install end">
+      </div>
+      <p>설치 완료 후 cmd 창을 열어 <span class="homepage">git --version</span> 을 입력하면 현재 설치 된 Git의 버전을 나타내는 것을 볼 수 있다.</p>
     </section>
-    <!-- // Git의 기본용어 -->
+    <!-- // git window os install -->
+
+    <!-- git mac os install -->
+    <section class="container-white list-title">
+      <h3>⭐️ Mac 운영체제 Git 설치</h3>
+      <p>Terminal(터미널)을 열어 git --version 을 입력한다.</p>
+      <div class="gitex-wrap"><img src="../img/gitex/git-ex4.png" alt="git install example"></div>
+      <p>git --version 을 입력 후 다음과 같은 창이 나오면 설치를 눌러 진행한다.</p>
+      <div class="gitex-wrap"><img src="../img/gitex/git-ex5.png" alt="git install example"></div>
+      <p>설치 완료 후 cmd 창을 열어 <span class="homepage">git --version</span> 을 입력하면 현재 설치 된 Git의 버전을 나타내는 것을 볼 수 있다.</p><br>
+      <p>
+        위의 방법으로 설치가 되지 않는다면, Homebrew 라는 프로그램을 사용하여 설치를 진행한다.
+        <span class="homepage">https://brew.sh/index_ko</span>에 접속하여 Homebrew 설치하기 아래에 있는 명령어를 복사하여 Terminal(터미널)에서 붙여넣고 설치를 진행한다.
+      </p><br>
+      <p>명령어 : <span class="homepage">& /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span></p>
+      <div class="gitex-wrap"><img src="../img/gitex/git-ex6.png" alt="homebrew install"></div>
+      <p>Homebrew 설치를 완료 하였으면 Terminal(터미널)에서 <span class="homepage">brew install git</span> 명령어를 입력하여 Git 설치를 완료할 수 있다.</p><br>
+      <p>Window 운영체제와 마찬가지로 설치 완료 후 Terminal(터미널) 창을 열어 <span class="homepage">git --version</span> 을 입력하면 현재 설치 된 Git의 버전을 나타내는 것을 볼 수 있다.</p>
+    </section>
+    <!-- // git mac os install -->
+
+    <!-- git 최초설정 -->
+    <section class="container-white list-title">
+      <h3>⭐️ Git 최초설정</h3>
+      <p>
+        Git을 설치 후 사용하기 위해, 사용자의 정보를 입력해 주어야한다.<br>
+        <div class="homepage">
+          git config --global user.email "사용자의 이메일"<br>
+          git config --global user.name "사용자의 이름"
+        </div>
+      </p>
+      <div class="gitex-wrap"><img src="../img/gitex/git-ex7.png" alt="git install example"></div>
+      <p>사용자 정보를 입력 후 <span class="homepage">git config --list</span> 를 입력하면 사용자의 정보가 제대로 입력되었는지 확인 할 수 있다.</p>
+    </section>
+    <!-- // git 최초설정 -->
   </main>
 </body>
 </html>

@@ -156,3 +156,20 @@ dd {
   border: 1px solid white;
 }
 /* // table example */
+
+/* git homepage example */
+.homepage {
+  background-color: #3e3e3e;
+  padding: 0 5px;
+  color: #eee;
+  border-radius: 4px;
+}
+.gitex-wrap {
+  max-width: 840px;
+  text-align: center;
+  margin: 10px 0;
+}
+.gitex-wrap img {
+  width: 100%;
+}
+/* git homepage example */
