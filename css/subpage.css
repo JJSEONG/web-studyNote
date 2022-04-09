@@ -14,7 +14,7 @@ main .subpage-title .iconwrap {
   align-items: center;
 }
 main .subpage-title .iconwrap .iconimg {
-  width: 100px;
+  width: 80px;
 }
 main .subpage-title .subpage-intro {
   max-width: 800px;
@@ -33,28 +33,38 @@ main .subpage-list .listcard {
   min-height: 200px;
   display: block;
   margin: 20px auto;
-  padding: 15px 10px;
+  padding: 10px;
   border: 1px solid #333;
   border-radius: 20px;
 }
 main .subpage-list .listcard .listwrap {
   overflow: hidden;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .subpage-list .listcard .thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .subpage-list .listcard .thumbnail img {
-  width: 90px;
+  width: 80px;
   text-align: center;
   display: block;
   margin: 0 auto;
   transition: 0.5s;
 }
 main .subpage-list .listcard .listcontent {
-  display: block;
-  margin: 20px auto;
+  height: 100%;
+  margin-top: 20px;
 }
 main .subpage-list .listcard .listcontent h3 {
   padding-bottom: 20px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #c3c3c3;
   text-align: center;
   transition: 0.5s;
 }
@@ -74,10 +84,13 @@ main .subpage-list .listcard:hover .listcontent h3 {
 
 @media screen and (max-width: 400px) {
   main .subpage-title .iconwrap .iconimg {
-    width: 60px;
+    /* width: 60px; */
   }
 }
 @media screen and (min-width: 768px) {
+  main .subpage-list .listcard .listwrap {
+    flex-direction: row;
+  }
   main .subpage-list .listcard .thumbnail  {
     float: left;
     width: 30%;
@@ -86,8 +99,8 @@ main .subpage-list .listcard:hover .listcontent h3 {
     float: left;
     width: 66%;
   }
-  main .subpage-list .listcard .thumbnail img {
-    margin-top: 15px;
+  main .subpage-list .listcard .listcontent {
+    margin-top: 0;
   }
   main .subpage-list .listcard .listcontent h3 {
     font-size: 24px;
