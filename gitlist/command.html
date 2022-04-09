@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Github 시작하기</title>
+  <title>Github 명령어</title>
   <!-- style.css 연결 -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/subpage.css">
@@ -40,39 +40,67 @@
     </nav>
   </header>
   <main class="mgt120">
-    <!-- Github Start -->
+    <!-- Github Command -->
     <section class="container-white list-title">
-      <h2>Github 시작하기</h2>
-      <h3>⭐️ Github 회원가입과 저장소(Repository)</h3>
-      <p>Git의 사용자 설정까지 진행했으면, 이제 원격저장소(Remote Repository)인 Github의 회원가입을 진행하여 사용하기 전에 환경을 구축하고 새로운 저장소(Repository)를 생성하는 법을 알아보자.</p>
+      <h2>Github 명령어(Command)</h2>
+      <h3>⭐️ Github 업로드와 명령어</h3>
+      <p>원격저장소(Remote Repository)인 Github에 저장소(Repository)를 생성하였다면, 이 저장소(Repository)에 업로드하여 저장시키고, 각종 명령어들도 알아보자.</p>
     </section>
-    <!-- // Github Start -->
+    <!-- // Github Command -->
 
-    <!-- Github signup -->
+    <!-- Github Command -->
     <section class="container-white list-title">
-      <h3>⭐️ Github 회원가입</h3>
-      <p>Github을 사용하기 전에 먼저 회원가입을 하여야한다. <a href="https://github.com/" class="homepage">https://github.com/</a> 의 홈페이지로 이동하여 회원가입을 진행한다.</p>
+      <h3>⭐️ Github 명령어</h3>
+      <p>Github의 저장소(Repository)에 업로드를 하기 위해 Github에서 사용되는 간단한 명령어들(Commands)를 알아야 사용이 가능하다. 명령어들을 알아보고 사용해보자. 모든 명령어는 cmd / 터미널(Terminal) / git bash / VS code 의 터미널 중에서 편한것을 선택하여 작성하면 된다. 작성자는 VS code의 터미널을 주로 사용하고 있다.</p>
+      <ul class="gitlist-ex">
+        <li>
+          <p><span class="git-title">git init</span> : 현재 지정된 폴더에 .git 이라는 빈 파일을 생성시켜 git으로 관리 할 수 있도록 만들어준다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git status</span> : 현재 폴더안의 파일들의 상태를 보여준다.</p>
+          <ul class="gitlist-ex">
+            <li>
+              <p>
+                <span class="git-title">Changes to be commited</span> : 스테이지에 추가된 파일 리스트 [git add 명령어 사용한 상태]
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="git-title">Changes not staged for commit</span> : 스테이지에서 추적이 되었던 파일이 수정되었지만, 스테이지로 추가가 되지 않은 상태 [git add 명령어로 스테이지에 추가가 되었지만 그 후에 수정이 일어난 상태]
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="git-title">Untracked files</span> : 신규로 생성된 파일 리스트
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><span class="git-title">git add</span> : 현재 작업중인 파일을 버전관리를 시작하겠다고 선언하는 부분이다. [스테이지로 추가]</p>
+          <ul class="gitlist-ex">
+            <li>
+              <p><span class="git-title">git add 파일명</span> : 특정 파일만 버전관리를 시작하겠다고 선언하는 것이다. [특정 파일만 스테이지로 추가]</p>
+            </li>
+            <li>
+              <p><span class="git-title">git add .</span> : 특정 파일이 아닌 현재 폴더 안의 모든 파일의 버전관리를 시작하겠다고 선언하는 것이다. [모든 파일을 스테이지로 추가]</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><span class="git-title">git commit -m "설명"</span> : git add로 버전관리를 시작하겠다고 선언한 내용들을 버전으로 만들어서 관리한다. 뒤에 설명란에는 수정한 내용이나 추가작업한 내용을 적어주면 추후에 알아보기가 쉬우며, 원하는 지점으로 돌아갈 때, 식별하기 편리하다. [스테이지에 추가된 내용을 버전으로 생성]</p>
+        </li>
+        <li>
+          <p><span class="git-title">git remote add origin "원격저장소 주소"</span> : 버전을 생성한 후, 원격저장소에 업로드를 하기위해 원격저장소를 연결한다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git push origin master</span> : git commit 으로 버전을 생성하고, 원격저장소와 연결이 되었다면 업로드를 하기 위해 push를 사용한다. [생성된 버전을 master 브랜치로 저장]</p>
+        </li>
+      </ul>
       <div class="gitex-wrap">
-        <img src="../img/gitex/github/github-ex1.png" alt="github signup example">
-        <img src="../img/gitex/github/github-ex2.png" alt="github signup example">
       </div>
     </section>
-    <!-- // Github signup -->
-
-    <!-- Github Repository create -->
-    <section class="container-white list-title">
-      <h3>⭐️ Github 저장소(Repository) 생성하기</h3>
-      <p>위의 과정에서 아이디를 생성했으면 로그인을 하고, Repositories 탭으로 이동하여 새로운 저장소(Repository)를 생성한다.</p>
-      <div class="gitex-wrap">
-        <img src="../img/gitex/github/github-ex3.png" alt="github repository create">
-        <img src="../img/gitex/github/github-ex4.png" alt="github repository create">
-      </div>
-      <p>작성자는 github-ex 라는 이름으로 저장소(Repository)를 생성하였고, 노란색 박스 안의 부분의 내용은 체크하지 않고 생성을 진행했다. 그럼 아래와 같이 저장소(Repository)가 생성된 것을 볼 수 있다.</p>
-      <div class="gitex-wrap">
-        <img src="../img/gitex/github/github-ex5.png" alt="github signup example">
-      </div>
-    </section>
-    <!-- // Github Repository create -->
+    <!-- // Github Command -->
   </main>
 </body>
 </html>

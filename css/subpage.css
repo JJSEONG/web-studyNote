@@ -82,11 +82,6 @@ main .subpage-list .listcard:hover .listcontent h3 {
 }
 /* subpage-list section */
 
-@media screen and (max-width: 400px) {
-  main .subpage-title .iconwrap .iconimg {
-    /* width: 60px; */
-  }
-}
 @media screen and (min-width: 768px) {
   main .subpage-list .listcard .listwrap {
     flex-direction: row;

@@ -173,3 +173,22 @@ dd {
   width: 100%;
 }
 /* git homepage example */
+
+/* git list-ex */
+.gitlist-ex {
+  padding-left: 20px;
+  font-size: 16px;
+  list-style: disc;
+}
+.gitlist-ex p {
+  margin: 5px 0 !important;
+}
+.git-title {
+  background-color: #3e3e3e;
+  padding: 0 5px;
+  color: #eee;
+  border-radius: 4px;
+  padding: 4px;
+  display: inline-block;
+}
+/* // git list-ex */
