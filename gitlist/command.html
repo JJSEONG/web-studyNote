@@ -54,7 +54,7 @@
       <p>Github의 저장소(Repository)에 업로드를 하기 위해 Github에서 사용되는 간단한 명령어들(Commands)를 알아야 사용이 가능하다. 명령어들을 알아보고 사용해보자. 모든 명령어는 cmd / 터미널(Terminal) / git bash / VS code 의 터미널 중에서 편한것을 선택하여 작성하면 된다. 작성자는 VS code의 터미널을 주로 사용하고 있다.</p>
       <ul class="gitlist-ex">
         <li>
-          <p><span class="git-title">git init</span> : 현재 지정된 폴더에 .git 이라는 빈 파일을 생성시켜 git으로 관리 할 수 있도록 만들어준다.</p>
+          <p><span class="git-title">git init</span> : 현재 지정된 폴더에 .git 이라는 빈 파일을 생성시켜 git으로 관리 할 수 있도록 만들어준다. [초기화 / 맨 처음 프로젝트를 올릴 때 사용]</p>
         </li>
         <li>
           <p><span class="git-title">git status</span> : 현재 폴더안의 파일들의 상태를 보여준다.</p>
@@ -83,7 +83,7 @@
               <p><span class="git-title">git add 파일명</span> : 특정 파일만 버전관리를 시작하겠다고 선언하는 것이다. [특정 파일만 스테이지로 추가]</p>
             </li>
             <li>
-              <p><span class="git-title">git add .</span> : 특정 파일이 아닌 현재 폴더 안의 모든 파일의 버전관리를 시작하겠다고 선언하는 것이다. [모든 파일을 스테이지로 추가]</p>
+              <p><span class="git-title">git add .</span> : [.]이 모두라는 뜻으로 통한다. 특정 파일이 아닌 현재 폴더 안의 모든 파일의 버전관리를 시작하겠다고 선언하는 것이다. [모든 파일을 스테이지로 추가]</p>
             </li>
           </ul>
         </li>
@@ -94,7 +94,151 @@
           <p><span class="git-title">git remote add origin "원격저장소 주소"</span> : 버전을 생성한 후, 원격저장소에 업로드를 하기위해 원격저장소를 연결한다.</p>
         </li>
         <li>
+          <p><span class="git-title">git remote -v</span> : 현재 폴더와 연결되어있는 원격저장소를 나타낸다.</p>
+        </li>
+        <li>
           <p><span class="git-title">git push origin master</span> : git commit 으로 버전을 생성하고, 원격저장소와 연결이 되었다면 업로드를 하기 위해 push를 사용한다. [생성된 버전을 master 브랜치로 저장]</p>
+        </li>
+        <li>
+          <p><span class="git-title">git log</span> : git commit 으로 생성한 버전(히스토리)을 최근순으로 조회한다. git log의 속성도 여러가지가 존재한다.</p>
+          <ul class="gitlist-ex">
+            <li>
+              <p><span class="git-title">git log -p</span> : 각 commit의 diff 결과를 보여준다.<br>
+              diff : commit의 결과를 비교하여 변경된 곳을 자세히 알려준다.</p>
+            </li>
+            <li>
+              <p><span class="git-title">git log -(숫자)</span> : (숫자)만큼의 commit을 최신순으로 보여준다. ex) -2 를 입력하면 최신순으로 2개의 commit이 나타난다.</p>
+            </li>
+            <li>
+              <p><span class="git-title">git log --stat</span> : 각 commit의 파일별 변경사항 등 통계를 볼 수 있다.</p>
+            </li>
+            <li>
+              <p><span class="git-title">git log --pretty</span> : commit의 히스토리를 보여줄 때 기본형식 이외에 사용자가 직접 정의한 내용으로 보이게 지정할 수 있다.</p>
+              <ul class="gitlist-ex">
+                <li>
+                  <p><span class="git-title">git log --pretty=oneline</span> : --pretty 속성에 =oneline 을 같이 작성하여 사용하면, 각 commit을 한줄로 표현하여준다. 이 때, =oneline 자리에 short, full, fuller 옵션을 넣을 수 있는데 이 속성은 정보를 조금씩 가감해서 보여준다.</p>
+                </li>
+                <li>
+                  <p><span class="git-title">git log --pretty=format</span> : --pretty 속성에 =format 을 사용하면 사용자가 원하는 포맷으로 결과를 출력 할 수 있다.<br>
+                  ex) git log --pretty=format:"%h -%an, %ar : %s"</p><br>
+                  <table class="table">
+                    <caption>format의 옵션</caption>
+                    <tr>
+                      <th>%H</th>
+                      <td>커밋 해시</td>
+                      <th>%h</th>
+                      <td>짧은 길이 트리 해시</td>
+                    </tr>
+                    <tr>
+                      <th>%T</th>
+                      <td>트리 해시</td>
+                      <th>%t</th>
+                      <td>부모 해시</td>
+                    </tr>
+                    <tr>
+                      <th>%P</th>
+                      <td>부모 해시</td>
+                      <th>%p</th>
+                      <td>짧은 길이 부모 해시</td>
+                    </tr>
+                    <tr>
+                      <th>%an</th>
+                      <td>저자 이름</td>
+                      <th>%ae</th>
+                      <td>저자 메일</td>
+                    </tr>
+                    <tr>
+                      <th>%ad</th>
+                      <td>저자 시각</td>
+                      <th>%ar</th>
+                      <td>저자 상대적 시각</td>
+                    </tr>
+                    <tr>
+                      <th>%cn</th>
+                      <td>커미터 이름</td>
+                      <th>%ce</th>
+                      <td>커미터 메일</td>
+                    </tr>
+                    <tr>
+                      <th>%cd</th>
+                      <td>커미터 시각</td>
+                      <th>%cr</th>
+                      <td>커미터 상대적 시각</td>
+                    </tr>
+                    <tr>
+                      <th>%s</th>
+                      <td>요약</td>
+                    </tr>
+                  </table><br>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p><span class="git-title">git log --graph</span> : commit의 branch와 merge의 히스토리 정보까지 ASCII 그래프로 나타낸다.</p>
+            </li>
+            <li>
+              <p><span class="git-title">git log --branches</span> : branch별 최신순으로 commit한 내용이 히스토리를 보여준다.</p>
+            </li>
+            <li>
+              <p><span class="git-title">git log 속성=값</span> : commit을 조회하는 조건을 등록하여 조건에 알맞는 내용의 commit의 히스토리만 불러온다.<br>ex) git log --since=2.weeks [지난 2주 동안 만들어진 커밋 조회]</p><br>
+              <table class="table">
+                <caption>조건을 걸어주는 속성</caption>
+                <tr>
+                  <th>--since, --after</th>
+                  <td>명시한 날짜 이후의 커밋만 검색</td>
+                </tr>
+                <tr>
+                  <th>--untill, --before</th>
+                  <td>명시한 날짜 이전의 커밋만 조회</td>
+                </tr>
+                <tr>
+                  <th>--author</th>
+                  <td>입력한 저자의 커밋만 검색</td>
+                </tr>
+                <tr>
+                  <th>--committer</th>
+                  <td>입력한 커미터의 커밋만 검색</td>
+                </tr>
+                <tr>
+                  <th>--grep</th>
+                  <td>커밋 메시지 안의 텍스트를 검색</td>
+                </tr>
+                <tr>
+                  <th>-S</th>
+                  <td>커밋 변경(추가/삭제)된 내용 안의 텍스트 검색</td>
+                </tr>
+              </table><br>
+            </li>
+            <li>
+              <p><span class="git-title">git reset HEAD^ </span> : 가장 최신의 commit을 취소하고 바로 이전의 commit으로 돌아간다</p>
+            </li>
+            <li>
+              <p><span class="git-title">git reset HEAD~[취소할 commit의 수] </span> : 가장 최신의 commit을 [취소할 commit의 수]만큼 취소하고 돌아간다.</p>
+            </li>
+            <li>
+              <p>
+                <span class="git-title">git reset [commit의 6자리숫자] --soft </span> : 지정된 [commit의 6자리숫자] 히스토리로 이동하지만, 작업중인 파일과 git add로 올린 스테이지의 내용은 이동하지 않고 남아있다.<br>
+                ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit은 3번째로 돌아가지만, 작업중인 파일과 스테이지의 내용은 Commit은 5번째인 그대로 남아있는다. [git commit 으로 바로 다시 버전 생성가능]
+              </p>
+            </li><br>
+            <li>
+              <p>
+                <span class="git-title">git reset [commit의 6자리숫자] --mixed </span> : 지정된 [commit의 6자리숫자] 히스토리로 이동하며 git add로 올린 스테이지의 내용도 같이 이동하여 사라지만, 작업중인 파일 내용은 이동하지 않고 남아있다.<br>
+                ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit과 스테이지의 내용은 3번째로 돌아가지만 작업중인 파일은 그대로 남아있다. [git add를 진행하여 스테이지에 등록 후 git commit을 진행하여야 한다.]
+              </p>
+            </li><br>
+            <li>
+              <p>
+                <span class="git-title">git reset [commit의 6자리숫자] --hard </span> : 원하는 commit의 히스토리로 이동하며, 그 이후에 작성된 commit은 전부 삭제된다.<br>
+                ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit과 스테이지의 내용, 작업중인 파일의 내용도 모두 삭제되며 돌아간다.
+              </p>
+            </li><br>
+            <li>
+              <p>
+                <span class="git-title"></span>
+              </p>
+            </li>
+          </ul>
         </li>
       </ul>
       <div class="gitex-wrap">
