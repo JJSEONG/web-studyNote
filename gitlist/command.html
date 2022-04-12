@@ -97,6 +97,9 @@
           <p><span class="git-title">git remote -v</span> : 현재 폴더와 연결되어있는 원격저장소를 나타낸다.</p>
         </li>
         <li>
+          <p><span class="git-title">git remote set-url origin [원격저장소의 URL]</span> : 현재 폴더와 연결되어있는 원격저장소를 변경하고 싶을 때 사용한다. 다른 원격저장소의 URL을 가지고와서 명령어를 입력하면 원격저장소의 위치가 변경된다.</p>
+        </li>
+        <li>
           <p><span class="git-title">git push origin master</span> : git commit 으로 버전을 생성하고, 원격저장소와 연결이 되었다면 업로드를 하기 위해 push를 사용한다. [생성된 버전을 master 브랜치로 저장]</p>
         </li>
         <li>
@@ -210,67 +213,65 @@
               </table><br>
             </li>
           </ul>
-          <li>
-            <p><span class="git-title">git reset HEAD^ </span> : 가장 최신의 commit을 취소하고 바로 이전의 commit으로 돌아간다</p>
-          </li>
-          <li>
-            <p><span class="git-title">git reset HEAD~[취소할 commit의 수] </span> : 가장 최신의 commit을 [취소할 commit의 수]만큼 취소하고 돌아간다.</p>
-          </li>
-          <li>
-            <p>
-              <span class="git-title">git reset [commit의 6자리숫자] --soft </span> : 지정된 [commit의 6자리숫자] 히스토리로 이동하지만, 작업중인 파일과 git add로 올린 스테이지의 내용은 이동하지 않고 남아있다.<br>
-              ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit은 3번째로 돌아가지만, 작업중인 파일과 스테이지의 내용은 Commit은 5번째인 그대로 남아있는다. [git commit 으로 바로 다시 버전 생성가능]
-            </p>
-          </li>
+        </li>
+        <li>
+          <p><span class="git-title">git reset HEAD^ </span> : 가장 최신의 commit을 취소하고 바로 이전의 commit으로 돌아간다</p>
+        </li>
+        <li>
+          <p><span class="git-title">git reset HEAD~[취소할 commit의 수] </span> : 가장 최신의 commit을 [취소할 commit의 수]만큼 취소하고 돌아간다.</p>
+        </li>
+        <li>
+          <p>
+            <span class="git-title">git reset [commit의 6자리숫자] --soft </span> : 지정된 [commit의 6자리숫자] 히스토리로 이동하지만, 작업중인 파일과 git add로 올린 스테이지의 내용은 이동하지 않고 남아있다.<br>
+            ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit은 3번째로 돌아가지만, 작업중인 파일과 스테이지의 내용은 Commit은 5번째인 그대로 남아있는다. [git commit 으로 바로 다시 버전 생성가능]
+          </p>
+        </li>
         <br>
-          <li>
-            <p>
-              <span class="git-title">git reset [commit의 6자리숫자] --mixed </span> : 지정된 [commit의 6자리숫자] 히스토리로 이동하며 git add로 올린 스테이지의 내용도 같이 이동하여 사라지만, 작업중인 파일 내용은 이동하지 않고 남아있다.<br>
-              ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit과 스테이지의 내용은 3번째로 돌아가지만 작업중인 파일은 그대로 남아있다. [git add를 진행하여 스테이지에 등록 후 git commit을 진행하여야 한다.]
-            </p>
-          </li><br>
-          <li>
-            <p>
-              <span class="git-title">git reset [commit의 6자리숫자] --hard </span> : 지정된 [commit의 6자리숫자] 히스토리로 이동하며, 그 이후에 작성된 commit은 전부 삭제된다. --hard는 모든 것을 지우고 되돌아오기 때문에 reset 하기 전의 상황으로 돌아갈 수 없으니 신중하게 선택하여야 한다.<br>
-              ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit과 스테이지의 내용, 작업중인 파일의 내용도 모두 삭제되며 돌아간다.
-            </p>
-          </li><br>
-          <li>
-            <p>
-              <span class="git-title">git revert [commit의 6자리숫자]</span> : [commit의 6자리숫자]를 취소시키며 이전 상태로 돌아온다. reset --hard와 비슷한 속성이지만 reset은 commit을 삭제하고 돌아가지만, revert는 새로운 commit을 생성하여 덮어쓰는 개념이라고 볼 수 있다. 그러니 revert를 사용하면 추후에 덮어쓴 내용만 reset으로 삭제해주면 다시 원상복구가 가능하다. [reset보다는 revert를 사용하는 것을 추천한다!]
-            </p>
-          </li>
-          <li>
-            <p><span class="git-title">git branch</span> : 브랜치를 확인 할 수 있다.</p>
-          </li>
-          <li>
-            <p><span class="git-title">git branch [branch-name]</span> : [branch-name] 이라는 브랜치를 생성한다.</p>
-          </li>
-          <li>
-            <p><span class="git-title">git checkout [branch-name]</span> : [branch-name] 이라는 브랜치로 이동한다. 이동한 브랜치에서 작업을 진행하고 add와 commit을 진행해도 master 브랜치에는 영향이 없으며 [branch-name]의 브랜치에만 작용한다.</p>
-          </li>
-          <li>
-            <p><span class="git-title">git branch -D [branch-name]</span> : [branch-name] 이라는 브랜치 삭제할 때 사용한다.</p>
-          </li>
-          <li>
-            <p><span class="git-title">git merge [branch-name]</span> : master 브랜치로 이동하여 다른 브랜치와 병합을 진행하고 싶을 때 사용한다. Mac의 경우 merge를 진행하면 vi화면이 출력되는데 이때 :wq 를 입력하여주면 된다.</p>
-          </li>
-          <li>
-            <p><span class="git-title">git rebase [basebranch-name]</span> : rebase 하고 싶은 브랜치로 git checkout [branch-name]으로 브랜치를 변경 후, 베이스로 삼아서 재배치를 진행 할 브랜치 명을 입력한다. merge와는 다르게 병합은 되지만, 브랜치가 나눠지지 않고, commit 시간의 순서대로 한줄로 나열된다.</p>
-          </li>
-          <li>
-            <p><span class="git-title">git clone [Repository-URL 주소]</span> : 보통 혼자 개발을 진행하지 않고 협업을 진행하기 때문에, 초반에 다른 사람이 미리 진행중인 프로젝트를 받아서 사용하거나 오픈소스들을 가져와서 사용할 때 쓰는 명령어이다. 이는 Repository의 내용을 모두 가져와 복제하는 것이다.</p>
-          </li>
-          <li>
-            <p><span class="git-title">git fetch origin master</span> : 원격 저장소에 저장되어 있는 코드를 불러올 때 사용한다. fetch는 원격 저장소에서 로컬 저장소로 코드를 가져와 비교하여 변경사항이 있다면 알려주고, 추후에 작업을 어떻게 진행 할 것인지 방향을 정할 수 있다. 신중하게 프로젝트를 작업할 때 주로 많이 사용하며, 병합(merge)는 따로 진행해주어야한다.</p>
-          </li>
-          <li>
-            <p><span class="git-title">git pull</span> : fetch와 마찬가지로 원격 저장소에 저장되어 있는 코드를 불러올 때 사용한다. 그러나 pull은 원격 저장소에서 로컬 저장소로 가져오는 것이 아니라 현재 작업중인 작업공간(Working Directory)으로 가져오며 병합(merge)을 시킨다. 그러므로 미리 commit하여</p>
-          </li>
+        <li>
+          <p>
+            <span class="git-title">git reset [commit의 6자리숫자] --mixed </span> : 지정된 [commit의 6자리숫자] 히스토리로 이동하며 git add로 올린 스테이지의 내용도 같이 이동하여 사라지만, 작업중인 파일 내용은 이동하지 않고 남아있다.<br>
+            ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit과 스테이지의 내용은 3번째로 돌아가지만 작업중인 파일은 그대로 남아있다. [git add를 진행하여 스테이지에 등록 후 git commit을 진행하여야 한다.]
+          </p>
+        </li><br>
+        <li>
+          <p>
+            <span class="git-title">git reset [commit의 6자리숫자] --hard </span> : 지정된 [commit의 6자리숫자] 히스토리로 이동하며, 그 이후에 작성된 commit은 전부 삭제된다. --hard는 모든 것을 지우고 되돌아오기 때문에 reset 하기 전의 상황으로 돌아갈 수 없으니 신중하게 선택하여야 한다.<br>
+            ex) 5번째 Commit에서 3번째 Commit으로 이동 시 Commit과 스테이지의 내용, 작업중인 파일의 내용도 모두 삭제되며 돌아간다.
+          </p>
+        </li><br>
+        <li>
+          <p>
+            <span class="git-title">git revert [commit의 6자리숫자]</span> : [commit의 6자리숫자]를 취소시키며 이전 상태로 돌아온다. reset --hard와 비슷한 속성이지만 reset은 commit을 삭제하고 돌아가지만, revert는 새로운 commit을 생성하여 덮어쓰는 개념이라고 볼 수 있다. 그러니 revert를 사용하면 추후에 덮어쓴 내용만 reset으로 삭제해주면 다시 원상복구가 가능하다. [reset보다는 revert를 사용하는 것을 추천한다!]
+          </p>
+        </li>
+        <li>
+          <p><span class="git-title">git branch</span> : 브랜치를 확인 할 수 있다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git branch [branch-name]</span> : [branch-name] 이라는 브랜치를 생성한다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git checkout [branch-name]</span> : [branch-name] 이라는 브랜치로 이동한다. 이동한 브랜치에서 작업을 진행하고 add와 commit을 진행해도 master 브랜치에는 영향이 없으며 [branch-name]의 브랜치에만 작용한다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git branch -D [branch-name]</span> : [branch-name] 이라는 브랜치 삭제할 때 사용한다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git merge [branch-name]</span> : master 브랜치로 이동하여 다른 브랜치와 병합을 진행하고 싶을 때 사용한다. Mac의 경우 merge를 진행하면 vi화면이 출력되는데 이때 :wq 를 입력하여주면 된다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git rebase [basebranch-name]</span> : rebase 하고 싶은 브랜치로 git checkout [branch-name]으로 브랜치를 변경 후, 베이스로 삼아서 재배치를 진행 할 브랜치 명을 입력한다. merge와는 다르게 병합은 되지만, 브랜치가 나눠지지 않고, commit 시간의 순서대로 한줄로 나열된다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git clone [Repository-URL 주소]</span> : 보통 혼자 개발을 진행하지 않고 협업을 진행하기 때문에, 초반에 다른 사람이 미리 진행중인 프로젝트를 받아서 사용하거나 오픈소스들을 가져와서 사용할 때 쓰는 명령어이다. 이는 Repository의 내용을 모두 가져와 복제하는 것이다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git fetch origin master</span> : 원격 저장소에 저장되어 있는 코드를 불러올 때 사용한다. fetch는 원격 저장소에서 로컬 저장소로 코드를 가져와 비교하여 변경사항이 있다면 알려주고, 추후에 작업을 어떻게 진행 할 것인지 방향을 정할 수 있다. 신중하게 프로젝트를 작업할 때 주로 많이 사용하며, 병합(merge)는 따로 진행해주어야한다.</p>
+        </li>
+        <li>
+          <p><span class="git-title">git pull</span> : fetch와 마찬가지로 원격 저장소에 저장되어 있는 코드를 불러올 때 사용한다. 그러나 pull은 원격 저장소에서 로컬 저장소로 가져오는 것이 아니라 현재 작업중인 작업공간(Working Directory)으로 가져오며 자동으로 병합(merge)을 시킨다. 이러한 이유로 수정된 내용이 무엇인지 확인이 안되므로 신중하게 사용하여야하며, fetch + merge 를 사용하는 것을 추천한다.</p>
         </li>
       </ul>
-      <div class="gitex-wrap">
-      </div>
     </section>
     <!-- // Github Command -->
   </main>
