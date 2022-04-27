@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML의 개념과 구조</title>
+  <!-- style.css 연결 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/subpage.css">
+  <link rel="stylesheet" href="../htmllist/css/liststyle.css">
+  <link rel="stylesheet" href="../htmllist/css/example.css">
+  <link rel="icon" href="../favicon.png">
+  <!-- fontawesome icon 연결 link -->
+  <script src="https://kit.fontawesome.com/df3ef1d296.js" crossorigin="anonymous"></script>
+  <!-- javascript 연결 -->
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="mainlogo">
+      </a>
+    </h1>
+    <div class="hambtn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navwrap">
+      <ul>
+        <li><a href="../web/web.html">웹 표준 & 웹 접근성</a></li>
+        <li><a href="../git/index.html">Git & Github</a></li>
+        <li><a href="../htmllist/index.html">HTML</a></li>
+        <li><a href="./index.html">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mgt120">
+    <!-- Main title -->
+    <section class="container-white list-title">
+      <h2>CSS의 기본적인 개념과 구조</h2>
+      <h3>⭐️ 사전적 정의</h3>
+      <p>종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어(style sheet language)로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다. 기본 파일명은 style.css이다. 마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다. 현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.</p>
+      <p class="source">출처 : https://ko.wikipedia.org/wiki/CSS</p>
+      <p>Web의 스타일을 꾸며주는 역할을 도맡아서 진행하는 언어가 CSS(Cascading Style Sheet)이다. 이 언어는 HTML언어로 마크업이 된 상태의 문서를 가져와 문서에 스타일을 주고, 전혀 다른 웹사이트처럼 변경할 수 있다. 또한 다양한 애니매이션 기능 등을 사용하면 더욱 더 멋지고 아름다운 홈페이지를 만들 수 있다.</p>
+    </section>
+    <!-- // Main title -->
+
+    <!-- html의 구조 -->
+    <section class="container-white list-title">
+      <h3>⭐️ HTML의 구조</h3>
+      <p>HTML은 마크업 언어로 태그를 이용하여 WebSite를 구성한다.</p>
+      <table class="table">
+        <tr>
+          <th>Html</th>
+          <td>html 태그를 사용하여 문서의 처음과 끝 즉, 문서의 범위를 나타낸다.</td>
+        </tr>
+        <tr>
+          <th>Head</th>
+          <td>head 태그는 제목이나 검색키워드 등 문서의 정보를 가지는 태그이다.</td>
+        </tr>
+        <tr>
+          <th>body</th>
+          <td>body 태그 안에 여러 태그들을 이용하여, 웹문서를 만들 때 body 태그 안에 작성한다.(문서의 구조)</td>
+        </tr>
+      </table>
+      <div class="linewrap">
+        <span class="firstline">&lt;html&gt;</span> <span class="subtext">[html의 여는태그]</span><br>
+        <span class="secondline">&lt;head&gt;</span> <span class="subtext">[head의 여는태그]</span><br>
+        <span class="thirdline">&lt;body&gt;</span> <span class="subtext">[body의 여는태그]</span><br>
+        <span class="thirdline">&lt;/body&gt;</span> <span class="subtext">[body의 닫는태그]</span><br>
+        <span class="secondline">&lt;/head&gt;</span> <span class="subtext">[head의 닫는태그]</span><br>
+        <span class="firstline">&lt;/html&gt;</span> <span class="subtext">[html의 닫는태그]</span>
+      </div>
+      <p>위의 내용과 같이 HTML의 기본적인 구조는 <span class="accent">&lt;여는태그&gt;내용&lt;닫는태그&gt;</span>로 구성이 되어진다.</p>
+    </section>
+    <!-- // html의 구조 -->
+
+    <!-- 부모-자식의 구조 -->
+    <section class="container-white list-title">
+      <h3>⭐️ HTML의 부모-자식 구조</h3>
+      <p>HTML의  구조는 부모-자식 간의 구조로 이루어진다. 부모-자식 간의 구조를 잘 이해하여야, 추후에 CSS에서 스타일을 줄 때 어느 특정 요소에 스타일을 주기가 쉽다. 부모와 자식은 상대적으로 이루어지며, 부모요소 아래의 자식요소가 또 다른 자식요소를 가질 수 있다.</p>
+      <div class="linewrap">
+        <span class="line">
+          &lt;section&gt;
+          <div class="secondline">&lt;h1&gt; <span class="white">색의종류</span> &lt;/h1&gt;</div>
+          <div class="secondline">&lt;ul&gt;</div>
+          <div class="thirdline">&lt;li&gt; <span class="white">RED</span> &lt;/li&gt;</div>
+          <div class="thirdline">&lt;li&gt; <span class="white">GREEN</span> &lt;/li&gt;</div>
+          <div class="thirdline">&lt;li&gt; <span class="white">BLUE</span> &lt;/li&gt;</div>
+          <div class="secondline">&lt;/ul&gt;</div>
+          &lt;/section&gt;
+          <div class="white">
+            <p>위의 예시에서 부모-자식 요소를 알아보자.</p>
+            <p><span class="skyblue">&lt;section&gt; 태그</span> : <span class="orange">&lt;h1&gt;</span> 태그와 <span class="orange">&lt;ul&gt;</span> 태그의 부모</p>
+            <p><span class="skyblue">&lt;h1&gt; 태그</span> : <span class="orange">&lt;section&gt;</span> 태그의 자식</p>
+            <p><span class="skyblue">&lt;ul&gt; 태그</span> : <span class="orange">&lt;section&gt;</span> 태그의 자식이자 <span class="orange">&lt;li&gt;</span> 태그의 부모</p>
+            <p><span class="skyblue">&lt;li&gt; 태그</span> : <span class="orange">&lt;ul&gt;</span> 태그의 자식</p>
+          </div>
+        </span>
+      </div>
+      <p>위의 내용과 같이 HTML의 부모-자식 구조는 <span class="accent">태그간 상대적으로</span> 이루어진다.</p>
+    </section>
+    <!-- // 부모-자식의 구조 -->
+  </main>
+</body>
+</html>
