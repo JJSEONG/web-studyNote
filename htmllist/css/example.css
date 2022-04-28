@@ -192,3 +192,7 @@ dd {
   display: inline-block;
 }
 /* // git list-ex */
+.colorex {
+  color: red;
+  margin: 0 !important;
+}
